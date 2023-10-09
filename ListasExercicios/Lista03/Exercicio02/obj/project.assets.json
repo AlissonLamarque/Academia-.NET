@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\PrimeiroProjeto\\exerciciosAcademia\\Lista 1\\Lista03\\ExerciciosLista03\\Exercicio02\\Exercicio02.csproj",
+      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista03\\Exercicio02\\Exercicio02.csproj",
       "projectName": "Exercicio02",
-      "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\PrimeiroProjeto\\exerciciosAcademia\\Lista 1\\Lista03\\ExerciciosLista03\\Exercicio02\\Exercicio02.csproj",
+      "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista03\\Exercicio02\\Exercicio02.csproj",
       "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\PrimeiroProjeto\\exerciciosAcademia\\Lista 1\\Lista03\\ExerciciosLista03\\Exercicio02\\obj\\",
+      "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista03\\Exercicio02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aliss\\AppData\\Roaming\\NuGet\\NuGet.Config",

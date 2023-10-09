@@ -6,16 +6,14 @@ public class Exercicio01
 {
     public static void Main(string[] args)
     {
-        int num = 0;
+        int numero = 0;
 
         do
         {
             Console.WriteLine("Digite um número inteiro positivo: ");
-            string numero = Console.ReadLine();
+            numero = int.Parse(Console.ReadLine());
 
-            num = int.Parse(numero);
-
-            if (num < 0)
+            if (numero < 0)
             {
                 Console.WriteLine("Valor incorreto! Tente novamente.");
             }
@@ -26,11 +24,11 @@ public class Exercicio01
 
         } while (true);
 
-        for (int i = 0; i < num; i++)
+        for (int i = 1; i < numero; i++)
         {
             if (i % 2 == 0)
             {
-
+                Console.WriteLine(i);
             }
         }
     }

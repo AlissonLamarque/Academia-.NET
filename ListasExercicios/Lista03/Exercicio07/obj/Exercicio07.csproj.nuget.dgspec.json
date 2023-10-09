@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\PrimeiroProjeto\\exerciciosAcademia\\Lista 1\\Lista03\\ExerciciosLista03\\Exercicio07\\Exercicio07.csproj": {}
+    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista03\\Exercicio07\\Exercicio07.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\PrimeiroProjeto\\exerciciosAcademia\\Lista 1\\Lista03\\ExerciciosLista03\\Exercicio07\\Exercicio07.csproj": {
+    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista03\\Exercicio07\\Exercicio07.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\PrimeiroProjeto\\exerciciosAcademia\\Lista 1\\Lista03\\ExerciciosLista03\\Exercicio07\\Exercicio07.csproj",
+        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista03\\Exercicio07\\Exercicio07.csproj",
         "projectName": "Exercicio07",
-        "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\PrimeiroProjeto\\exerciciosAcademia\\Lista 1\\Lista03\\ExerciciosLista03\\Exercicio07\\Exercicio07.csproj",
+        "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista03\\Exercicio07\\Exercicio07.csproj",
         "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\PrimeiroProjeto\\exerciciosAcademia\\Lista 1\\Lista03\\ExerciciosLista03\\Exercicio07\\obj\\",
+        "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista03\\Exercicio07\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aliss\\AppData\\Roaming\\NuGet\\NuGet.Config",
