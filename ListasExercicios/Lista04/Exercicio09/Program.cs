@@ -1,14 +1,12 @@
 ﻿// 9. Escreva um algoritmo que leia os valores para um vetor de 10 elementos, e em
 // seguida ordene em ordem crescente os valores desse vetor, utilizando um vetor auxiliar.
 
-DEU BRET
-
 public class Exercicio09
 {
     public static void Main(string[] args)
     {
         int[] vetor = new int[10];
-        int[] vetorAux = new int[10];
+        int aux = 0;
 
         for (int i = 0; i < vetor.Length; i++)
         {
@@ -16,34 +14,19 @@ public class Exercicio09
             vetor[i] = int.Parse(Console.ReadLine());
         }
 
-        while (true)
+        for (int i = 0; i < vetor.Length; i++)
         {
-            int contador = 0;
-
-            for (int i = 0; i < vetor.Length - 1; i++)
+            for (int j = 0; j < (vetor.Length - 1); j++)
             {
-                if (i == 0)
+                if (vetor[j + 1] < vetor[j])
                 {
-                    vetorAux[i] = vetor[i];
-                }
-
-                if (vetorAux[i] > vetor[i + 1])
-                {
-                    vetorAux[i + 1] = vetor[i];
-                    vetor[i] = vetor[i + 1];
-                }
-                else
-                {
-                    contador++;
+                    aux = vetor[j];
+                    vetor[j] = vetor[j + 1];
+                    vetor[j + 1] = aux;
                 }
             }
-
-            if(contador == 9)
-            {
-                break;
-            }
-
         }
+
 
         for (int i = 0; i < vetor.Length; i++)
         {
