@@ -12,6 +12,19 @@ public class Exercicio12
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("Marcação do odômetro no início do dia: ");
+        float odomInicio = float.Parse(Console.ReadLine());
+        Console.WriteLine("Marcação do odômetro no fim do dia: ");
+        float odomFinal = float.Parse(Console.ReadLine());
+        Console.WriteLine("Combustível gasto (L): ");
+        int combGasto = int.Parse(Console.ReadLine());
+        Console.WriteLine("Valor total recebido (R$): ");
+        float valorTotal = float.Parse(Console.ReadLine());
 
+        float kmTotal = odomFinal - odomInicio;
+        float consumoMedio = kmTotal / combGasto;
+        double lucroDia = valorTotal - (combGasto * 6.90);
+
+        Console.WriteLine($"Média de consumo: {consumoMedio:F2}Km/l\nLucro Líquido do dia: R${lucroDia:F2}");
     }
 }

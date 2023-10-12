@@ -11,6 +11,22 @@ public class Exercicio09
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("Valor da mercadoria: ");
+        float valor = float.Parse(Console.ReadLine());
 
+        float entrada, parcelas;
+
+        if (valor % 3 != 0)
+        {
+            entrada = (valor / 3) + (valor % 3);
+            parcelas = (valor - (valor % 3)) / 3;
+        }
+        else
+        {
+            entrada = (valor / 3);
+            parcelas = (valor / 3);
+        }
+
+        Console.WriteLine($"Valor total: R${valor:F2}\nEntrada: {entrada:F2}\nParcelas: {entrada:F2}\n");
     }
 }

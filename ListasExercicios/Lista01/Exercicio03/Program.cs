@@ -15,6 +15,8 @@ namespace Programa
 
             b = a;
             a = temp;
+
+            Console.WriteLine($"A = {a} B = {b}");
         }
     }
 }

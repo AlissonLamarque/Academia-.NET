@@ -6,21 +6,20 @@ namespace Programa
     {
         public static void Main(String[] args)
         {
-            int x, y, z, a;
-            float media;
+            float x, y, z, a, media;
 
             Console.WriteLine($"Digite o primeiro valor: ");
-            x = int.Parse(Console.ReadLine());
+            x = float.Parse(Console.ReadLine());
             Console.WriteLine($"Digite o segundo valor: ");
-            y = int.Parse(Console.ReadLine());
+            y = float.Parse(Console.ReadLine());
             Console.WriteLine($"Digite o terceiro valor: ");
-            z = int.Parse(Console.ReadLine());
+            z = float.Parse(Console.ReadLine());
             Console.WriteLine($"Digite o quarto valor: ");
-            a = int.Parse(Console.ReadLine());
+            a = float.Parse(Console.ReadLine());
 
             media = (x + y + z + a) / 4;
 
-            Console.WriteLine($"Como voce digitou os valores {x}, {y}, {z} e {a} a média é igual a {media}");
+            Console.WriteLine($"Como voce digitou os valores {x}, {y}, {z} e {a} a média é igual a {media:F2}");
 
         }
     }

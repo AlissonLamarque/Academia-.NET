@@ -6,17 +6,13 @@ public class Exercicio05
     public static void Main(string[] args)
     {
         Console.WriteLine("Distância percorrida (km): ");
-        string dist = Console.ReadLine();
-
-        int distancia = int.Parse(dist);
+        float distancia = float.Parse(Console.ReadLine());
 
         Console.WriteLine("Volume de combustível consumido (L): ");
-        string comb = Console.ReadLine();
-
-        int combustivel = int.Parse(comb);
+        float combustivel = float.Parse(Console.ReadLine());
 
         float consumo = distancia / combustivel;
 
-        Console.WriteLine($"O consumo médio do automóvel é igual a: {consumo:F2}Km/l");
+        Console.WriteLine($"O consumo médio do automóvel é igual a: {consumo:F1}Km/l");
     }
 }

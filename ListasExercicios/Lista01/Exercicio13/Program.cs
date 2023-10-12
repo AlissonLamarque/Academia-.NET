@@ -6,6 +6,16 @@ public class Exercicio13
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("Valor do salário mínimo: ");
+        float salarioMin = float.Parse(Console.ReadLine());
+        Console.WriteLine("Preço de custo de cada bicicleta: ");
+        float custoBicicleta = float.Parse(Console.ReadLine());
+        Console.WriteLine("Nr de bicicletas vendidas: ");
+        int nrVendas= int.Parse(Console.ReadLine());
 
+        double percentualCusto = custoBicicleta * 0.15;
+        double salarioVendedor = (salarioMin * 2) + (percentualCusto * nrVendas);
+
+        Console.WriteLine($"Salário do vendedor: R${salarioVendedor:F2}");
     }
 }

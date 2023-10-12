@@ -6,17 +6,17 @@ namespace Programa
     {
         public static void Main(String[] args) 
         {
-            int x, y;
+            float x, y;
             float media;
 
             Console.WriteLine($"Digite o primeiro valor: ");
-            x = int.Parse(Console.ReadLine());
+            x = float.Parse(Console.ReadLine());
             Console.WriteLine($"Digite o segundo valor: ");
-            y = int.Parse(Console.ReadLine());
+            y = float.Parse(Console.ReadLine());
 
             media = (x + y) / 2;
 
-            Console.WriteLine($"Como voce digitou os valores {x} e {y} a média é igual a {media}");
+            Console.WriteLine($"Como você digitou os valores {x} e {y} a média é igual a {media:F2}");
             
         }
     }

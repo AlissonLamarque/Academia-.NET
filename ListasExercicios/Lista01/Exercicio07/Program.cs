@@ -5,6 +5,20 @@ public class Exercicio07
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("Número do vendedor: ");
+        int nrVendedor = int.Parse(Console.ReadLine());
 
+        Console.WriteLine("Salário fixo: ");
+        float salarioFixo = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Total de vendas: ");
+        float totalVendas = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Percentual sobre o total de vendas: ");
+        float percentual = float.Parse(Console.ReadLine());
+
+        float salarioTotal = (totalVendas * (percentual / 100)) + salarioFixo;
+
+        Console.WriteLine($"Vendedor nr{nrVendedor}: R${salarioTotal:F2}");
     }
 }
