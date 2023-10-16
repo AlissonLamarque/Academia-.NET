@@ -3,7 +3,7 @@
 
 public class Exercicio07
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Número do vendedor: ");
         int nrVendedor = int.Parse(Console.ReadLine());

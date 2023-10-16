@@ -5,7 +5,7 @@ namespace Programa
 {
     public class exercicio01
     {
-        public static void Main(String[] args)
+        public static void Main()
         {
             Console.Write("Digite uma data [dd/mm/aaaa]: ");
             string data = Console.ReadLine();

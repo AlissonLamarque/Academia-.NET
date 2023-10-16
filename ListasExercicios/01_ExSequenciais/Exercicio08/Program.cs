@@ -2,7 +2,7 @@
 
 public class Exercicio08
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Temperatura em Cº: ");
         int celsius = int.Parse(Console.ReadLine());

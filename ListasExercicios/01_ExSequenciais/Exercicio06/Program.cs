@@ -3,7 +3,7 @@
 
 public class Exercicio06
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
 
     }

@@ -9,7 +9,7 @@ conseqüente pagamento dos boletos das duas prestações. */
 
 public class Exercicio09
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Valor da mercadoria: ");
         float valor = float.Parse(Console.ReadLine());

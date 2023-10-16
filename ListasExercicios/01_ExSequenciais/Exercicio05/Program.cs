@@ -3,7 +3,7 @@
 
 public class Exercicio05
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Distância percorrida (km): ");
         float distancia = float.Parse(Console.ReadLine());
