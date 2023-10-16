@@ -6,12 +6,9 @@ public class Exercicio05
     public static void Main(string[] args)
     {
         Console.WriteLine("1ª nota: ");
-        string notaum = Console.ReadLine();
+        float nota1 = float.Parse(Console.ReadLine());
         Console.WriteLine("2ª nota: ");
-        string notadois = Console.ReadLine();
-
-        int nota1 = int.Parse(notaum);
-        int nota2 = int.Parse(notadois);
+        float nota2 = float.Parse(Console.ReadLine());
 
         if ((nota1 + nota2) / 2 >= 7)
         {

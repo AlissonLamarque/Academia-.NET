@@ -8,6 +8,34 @@ public class Exercicio08
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("Código: ");
+        int codigo = int.Parse(Console.ReadLine());
+        Console.WriteLine("Nome: ");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Salário base (R$): ");
+        double salario = double.Parse(Console.ReadLine());
+        Console.WriteLine("Total de vendas (R$): ");
+        double totalVendas = double.Parse(Console.ReadLine());
 
+        if (totalVendas > 5000)
+        {
+            salario += totalVendas * 0.1;
+        }
+        else
+        {
+            if (totalVendas > 1000)
+            {
+                salario += totalVendas * 0.07;
+            }
+            else
+            {
+                if (totalVendas > 500)
+                {
+                    salario += totalVendas * 0.05;
+                }
+            }
+        }
+
+        Console.WriteLine($"{codigo} - {nome}: R${salario}");
     }
 }

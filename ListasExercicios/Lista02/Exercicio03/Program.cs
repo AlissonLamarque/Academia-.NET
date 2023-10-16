@@ -5,43 +5,36 @@ public class Exercicio03
     public static void Main(string[] args)
     {
         Console.WriteLine("Digite um valor: ");
-        string num1 = Console.ReadLine();
-
-        int numero1 = int.Parse(num1);
+        int numero1 = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Digite um valor: ");
-        string num2 = Console.ReadLine();
-
-        int numero2 = int.Parse(num1);
+        int numero2 = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Digite um valor: ");
-        string num3 = Console.ReadLine();
-
-        int numero3 = int.Parse(num1);
+        int numero3 = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Digite um valor: ");
-        string num4 = Console.ReadLine();
+        int numero4 = int.Parse(Console.ReadLine());
 
-        int numero4 = int.Parse(num1);
+        double media = (numero1 + numero2 + numero3 + numero4) / 4;
 
-        int media = (numero1 + numero2 + numero3 + numero4) / 4;
+        Console.WriteLine("Valores acima da média: ");
 
         if (numero1 > media)
         {
-            Console.WriteLine($"{numero1}");
+            Console.WriteLine($"- {numero1}");
         }
         if (numero2 > media)
         {
-            Console.WriteLine(numero2);
+            Console.WriteLine($"- {numero2}");
         }
         if (numero3 > media)
         {
-            Console.WriteLine(numero3);
+            Console.WriteLine($"- {numero3}");
         }
         if (numero4 > media)
         {
-            Console.WriteLine(numero4);
+            Console.WriteLine($"- {numero4}");
         }
-
     }
-} //DEU BRETTTTTTTTTTTTTTTTTTT
+}

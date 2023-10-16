@@ -5,9 +5,7 @@ public class Exercicio02
     public static void Main(string[] args)
     {
         Console.WriteLine("Digite um número: ");
-        string num = Console.ReadLine();
-
-        int numero = int.Parse(num);
+        int numero = int.Parse(Console.ReadLine());
 
         if (numero % 2 == 0 )
         {

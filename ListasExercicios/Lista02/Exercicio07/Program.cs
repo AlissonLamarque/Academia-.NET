@@ -6,6 +6,18 @@ public class Exercicio07
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("Digite uma frase: ");
+        string frase = Console.ReadLine();
+        Console.WriteLine("Palavra de pesquisa: ");
+        string palavra = Console.ReadLine();
 
+        if (frase.Contains(palavra))
+        {
+            Console.WriteLine("A palavra encontra-se na frase.");
+        }
+        else
+        {
+            Console.WriteLine("A palavra não se encontra na frase.");
+        }
     }
 }

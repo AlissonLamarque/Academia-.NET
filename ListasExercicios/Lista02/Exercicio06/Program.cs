@@ -18,14 +18,10 @@ public class Exercicio06
         string nomeUp = nomeMin.ToUpper();
 
         Console.WriteLine("Altura: ");
-        string alturaS = Console.ReadLine();
-
-        float altura = float.Parse(alturaS);
+        float altura = float.Parse(Console.ReadLine());
 
         Console.WriteLine("Peso: ");
-        string pesoS = Console.ReadLine();
-
-        float peso = float.Parse(pesoS);
+        float peso = float.Parse(Console.ReadLine());
 
         float imc = peso / (altura * altura);
 

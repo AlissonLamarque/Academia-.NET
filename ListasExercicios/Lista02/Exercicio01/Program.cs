@@ -2,8 +2,6 @@
 Área do triangulo = (base * altura) / 2; 
 Teste se a base ou a altura digitada não foi igual a zero.  */
 
-using System.Security.Cryptography;
-
 public class Exercicio01
 {
     public static void Main(string[] args)
@@ -11,14 +9,10 @@ public class Exercicio01
         do
         {
             Console.WriteLine("Altura do triângulo: ");
-            string alt = Console.ReadLine();
-
-            int alturaT = int.Parse(alt);
+            int alturaT = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Base do triângulo: ");
-            string bas = Console.ReadLine();
-
-            int baseT = int.Parse(bas);
+            int baseT = int.Parse(Console.ReadLine());
 
             if( alturaT == 0 || baseT == 0)
             {
@@ -27,7 +21,7 @@ public class Exercicio01
             else
             {
                 float areaT = (baseT * alturaT) / 2;
-                Console.WriteLine($"A área do triângulo é igual a: {areaT:F2}");
+                Console.WriteLine($"A área do triângulo é igual a: {areaT}");
                 break;
             }
         } while (true);

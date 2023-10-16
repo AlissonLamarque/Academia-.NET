@@ -11,6 +11,34 @@ public class Exercicio09
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("1º valor de glicemia: ");
+        int valor1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("2º valor de glicemia: ");
+        int valor2 = int.Parse(Console.ReadLine());
+        Console.WriteLine("3º valor de glicemia: ");
+        int valor3 = int.Parse(Console.ReadLine());
 
+        int media = (valor1 + valor2 + valor3) / 3;
+
+        if (valor1 < 65 || valor2 < 65 || valor3 < 65)
+        {
+            Console.WriteLine("Corre risco de hipoglicemia");
+        }
+        else if (valor1 > 250 || valor2 > 250 || valor3 > 250)
+        {
+            Console.WriteLine("Corre risco de hiperglicemia");
+        }
+        if (media < 80)
+        {
+            Console.WriteLine("É preciso diminuir 2 unidades de insulina");
+        }
+        else if (media > 150)
+        {
+            Console.WriteLine("É preciso adicionar 2 unidades de insulina");
+        }
+        else
+        {
+            Console.WriteLine($"Média: {media}");
+        }
     }
 }
