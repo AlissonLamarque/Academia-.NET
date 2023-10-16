@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista01\\Exercicio10\\Exercicio10.csproj": {}
+    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\01_ExSequenciais\\Exercicio10\\Exercicio10.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista01\\Exercicio10\\Exercicio10.csproj": {
+    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\01_ExSequenciais\\Exercicio10\\Exercicio10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista01\\Exercicio10\\Exercicio10.csproj",
+        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\01_ExSequenciais\\Exercicio10\\Exercicio10.csproj",
         "projectName": "Exercicio10",
-        "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista01\\Exercicio10\\Exercicio10.csproj",
+        "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\01_ExSequenciais\\Exercicio10\\Exercicio10.csproj",
         "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista01\\Exercicio10\\obj\\",
+        "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\01_ExSequenciais\\Exercicio10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aliss\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,12 +50,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jjLAPDfvTI4RMdhrRKOvZAxrscWdc4PjndFeD2AFvkYIVMUl8G5MHSkQ0uGBQUVLkteANMOfEDtH7K1YV6vNTg==",
+  "dgSpecHash": "EE0VzA+Zmlb/yPxl6mGAZm+mSXsqTjsAo3bq/vE2a0lg35YmdruHgEW3BRXuP5aU7GFc7dgXK74CVnr2BhwNUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\Lista01\\Exercicio12\\Exercicio12.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\01_ExSequenciais\\Exercicio12\\Exercicio12.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+  ],
   "logs": []
 }
