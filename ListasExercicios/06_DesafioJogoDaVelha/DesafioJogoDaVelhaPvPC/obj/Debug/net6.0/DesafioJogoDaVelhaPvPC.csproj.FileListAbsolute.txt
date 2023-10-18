@@ -1,0 +1,4 @@
+C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\06_DesafioJogoDaVelha\DesafioJogoDaVelhaPvPC\obj\Debug\net6.0\DesafioJogoDaVelhaPvPC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\06_DesafioJogoDaVelha\DesafioJogoDaVelhaPvPC\obj\Debug\net6.0\DesafioJogoDaVelhaPvPC.AssemblyInfoInputs.cache
+C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\06_DesafioJogoDaVelha\DesafioJogoDaVelhaPvPC\obj\Debug\net6.0\DesafioJogoDaVelhaPvPC.AssemblyInfo.cs
+C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\06_DesafioJogoDaVelha\DesafioJogoDaVelhaPvPC\obj\Debug\net6.0\DesafioJogoDaVelhaPvPC.csproj.CoreCompileInputs.cache

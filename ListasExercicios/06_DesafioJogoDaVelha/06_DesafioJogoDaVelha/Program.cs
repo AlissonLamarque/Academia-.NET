@@ -11,224 +11,39 @@ Extra:
 3) Para facilitar, faça com que o computador inicie jogando.
 */
 
-class DesafioJogoDaVelha
+class DesafioJogoDaVelhaPvP
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         char[,] tabuleiro = new char[3, 3];
-        string[] vetorJogada = new string[2];
-        string jogada;
-        int jogadaLinha, jogadaColuna, contadorJ1, contadorJ2, contadorJogo = 0, resposta;
+        int contadorJogo = 0, resposta;
         bool fimDeJogo = false;
 
         do
         {
             if (contadorJogo == 0) //Inicializando o tabuleiro
             {
-                Console.Clear();
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        tabuleiro[i, j] = ' ';
-                    }
-                }
-
-                Console.WriteLine("\nJOGO DA VELHA\n");
-                Console.WriteLine($" {tabuleiro[0,0]} | {tabuleiro[0,1]} | {tabuleiro[0,2]} ");
-                Console.WriteLine("---|---|---");
-                Console.WriteLine($" {tabuleiro[1,0]} | {tabuleiro[1,1]} | {tabuleiro[1,2]} ");
-                Console.WriteLine("---|---|---");
-                Console.WriteLine($" {tabuleiro[2,0]} | {tabuleiro[2,1]} | {tabuleiro[2,2]} ");
+                inicializarTabuleiro(tabuleiro);
             }
 
-
-            while (true) //Recebendo a jogada do 1º jogador
-            {
-                Console.WriteLine("\n1º Jogador (X) em que posição deseja jogar: ");
-                jogada = Console.ReadLine();
-
-                vetorJogada = jogada.Split(',');
-                jogadaLinha = int.Parse(vetorJogada[0]);
-                jogadaColuna = int.Parse(vetorJogada[1]);
-
-                if (tabuleiro[jogadaLinha, jogadaColuna] != ' ')
-                {
-                    Console.WriteLine("Posição preenchida! Tente novamente.");
-                }
-                else
-                {
-                    tabuleiro[jogadaLinha, jogadaColuna] = 'X';
-                    break;
-                }
-            }
-
-            Console.WriteLine($" {tabuleiro[0, 0]} | {tabuleiro[0, 1]} | {tabuleiro[0, 2]} ");
-            Console.WriteLine("---|---|---");
-            Console.WriteLine($" {tabuleiro[1, 0]} | {tabuleiro[1, 1]} | {tabuleiro[1, 2]} ");
-            Console.WriteLine("---|---|---");
-            Console.WriteLine($" {tabuleiro[2, 0]} | {tabuleiro[2, 1]} | {tabuleiro[2, 2]} ");
-
-            while(true) //Recebendo a jogada do 2º jogador
-            {
-                Console.WriteLine("\n2º Jogador (O) em que posição deseja jogar: ");
-                jogada = Console.ReadLine();
-
-                vetorJogada = jogada.Split(',');
-                jogadaLinha = int.Parse(vetorJogada[0]);
-                jogadaColuna = int.Parse(vetorJogada[1]);
-
-                if (tabuleiro[jogadaLinha, jogadaColuna] != ' ')
-                {
-                    Console.WriteLine("Posição preenchida! Tente novamente.");
-                }
-                else
-                {
-                    tabuleiro[jogadaLinha, jogadaColuna] = 'O';
-                    break;
-                }
-            }
-
-            Console.WriteLine($" {tabuleiro[0, 0]} | {tabuleiro[0, 1]} | {tabuleiro[0, 2]} ");
-            Console.WriteLine("---|---|---");
-            Console.WriteLine($" {tabuleiro[1, 0]} | {tabuleiro[1, 1]} | {tabuleiro[1, 2]} ");
-            Console.WriteLine("---|---|---");
-            Console.WriteLine($" {tabuleiro[2, 0]} | {tabuleiro[2, 1]} | {tabuleiro[2, 2]} ");
-
-            for (int i = 0; i < 3; i++) //Verificando se alguem ganhou nas linhas
-            {
-                contadorJ1 = 0;
-                contadorJ2 = 0;
-                for (int j = 0; j < 3; j++)
-                {
-                    if (tabuleiro[i, j] == 'X')
-                    {
-                        contadorJ1++;
-                    }
-                    else if (tabuleiro[i, j] == 'O')
-                    {
-                        contadorJ2++;
-                    }
-                }
-                if (contadorJ1 == 3)
-                {
-                    Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
-                    fimDeJogo = true;
-                    break;
-                }
-                else if (contadorJ2 == 3)
-                {
-                    Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
-                    fimDeJogo = true;
-                    break;
-                }
-            }
-
-            if (fimDeJogo == false) //Verificando se alguem ganhou nas colunas
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    contadorJ1 = 0;
-                    contadorJ2 = 0;
-                    for (int j = 0; j < 3; j++)
-                    {
-                        if (tabuleiro[j, i] == 'X')
-                        {
-                            contadorJ1++;
-                        }
-                        else if (tabuleiro[j, i] == 'O')
-                        {
-                            contadorJ2++;
-                        }
-                    }
-                    if (contadorJ1 == 3)
-                    {
-                        Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
-                        fimDeJogo = true;
-                        break;
-                    }
-                    else if (contadorJ2 == 3)
-                    {
-                        Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
-                        fimDeJogo = true;
-                        break;
-                    }
-                }
-            }
-
-            if (fimDeJogo == false) //Verificando se alguem ganhou na diagonal principal
-            {
-                contadorJ1 = 0;
-                contadorJ2 = 0;
-
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        if(i == j)
-                        {
-                            if (tabuleiro[j, i] == 'X')
-                            {
-                                contadorJ1++;
-                            }
-                            else if (tabuleiro[j, i] == 'O')
-                            {
-                                contadorJ2++;
-                            }
-                        }
-                    }
-                    if (contadorJ1 == 3)
-                    {
-                        Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
-                        fimDeJogo = true;
-                        break;
-                    }
-                    else if (contadorJ2 == 3)
-                    {
-                        Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
-                        fimDeJogo = true;
-                        break;
-                    }
-                }
-            }
-
-            if (fimDeJogo == false) //Verificando se alguem ganhou na diagonal inversa
-            {
-                contadorJ1 = 0;
-                contadorJ2 = 0;
-
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        if (i + j == 2)
-                        {
-                            if (tabuleiro[j, i] == 'X')
-                            {
-                                contadorJ1++;
-                            }
-                            else if (tabuleiro[j, i] == 'O')
-                            {
-                                contadorJ2++;
-                            }
-                        }
-                    }
-                    if (contadorJ1 == 3)
-                    {
-                        Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
-                        fimDeJogo = true;
-                        break;
-                    }
-                    else if (contadorJ2 == 3)
-                    {
-                        Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
-                        fimDeJogo = true;
-                        break;
-                    }
-                }
-            }
-
+            realizarJogada(tabuleiro, 1); //Realizando a jogada do 1º Jogador
             contadorJogo++;
+
+            printTabuleiro(tabuleiro);
+
+            fimDeJogo = verificaGanhador(tabuleiro, contadorJogo, false); //Verificando se alguém ganhou
+            
+
+
+            if (!fimDeJogo)
+            {
+                realizarJogada(tabuleiro, 2); //Realizando a jogada do 2º Jogador
+                contadorJogo++;
+
+                printTabuleiro(tabuleiro);
+
+                fimDeJogo = verificaGanhador(tabuleiro, contadorJogo, false);
+            }
 
             if (fimDeJogo) //Checando se o usuário deseja jogar novamente
             {
@@ -244,12 +59,258 @@ class DesafioJogoDaVelha
                 else
                 {
                     contadorJogo = 0;
-                    contadorJ1 = 0;
-                    contadorJ2 = 0;
                     fimDeJogo = false;
                 }
             }
 
         } while (true);
+    }
+
+
+    static void printTabuleiro(char[,] tabuleiro)
+    {
+        Console.WriteLine($" {tabuleiro[0, 0]} | {tabuleiro[0, 1]} | {tabuleiro[0, 2]} ");
+        Console.WriteLine("---|---|---");
+        Console.WriteLine($" {tabuleiro[1, 0]} | {tabuleiro[1, 1]} | {tabuleiro[1, 2]} ");
+        Console.WriteLine("---|---|---");
+        Console.WriteLine($" {tabuleiro[2, 0]} | {tabuleiro[2, 1]} | {tabuleiro[2, 2]} ");
+    }
+
+    static void inicializarTabuleiro(char[,] tabuleiro)
+    {
+        Console.Clear();
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                tabuleiro[i, j] = ' ';
+            }
+        }
+
+        Console.WriteLine("\nJOGO DA VELHA\n");
+        printTabuleiro(tabuleiro);
+    }
+
+    static void realizarJogada(char[,] tabuleiro, int contadorJogada)
+    {
+        int jogada, contador = 0;
+        bool jogadaValida = false;
+        char simbolo;
+
+        if (contadorJogada == 1)
+        {
+            simbolo = 'X';
+        }
+        else
+        {
+            simbolo = 'O';
+        }
+
+        do
+        {
+            Console.WriteLine($"\n{contadorJogada}º Jogador ({simbolo}) em que posição deseja jogar: ");
+            jogada = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    contador++;
+                    if (contador == jogada)
+                    {
+                        if (tabuleiro[i, j] != ' ')
+                        {
+                            Console.WriteLine("Posição preenchida! Tente novamente.");
+                        }
+                        else
+                        {
+                            if (contadorJogada == 1)
+                            {
+                                tabuleiro[i, j] = 'X';
+                                jogadaValida = true;
+                                break;
+                            }
+                            else
+                            {
+                                tabuleiro[i, j] = 'O';
+                                jogadaValida = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        } while (!jogadaValida);
+    }
+    
+    static bool verificaGanhador(char[,] tabuleiro, int contadorJogo, bool fimDeJogo)
+    {
+        fimDeJogo = verificaLinhas(tabuleiro, false); //Verificando se alguem ganhou nas linhas
+
+        if (!fimDeJogo)
+        {
+            fimDeJogo = verificaColunas(tabuleiro, false); //Verificando se alguem ganhou nas colunas
+        }
+
+        if (!fimDeJogo)
+        {
+            fimDeJogo = verificaDiagonalPrincipal(tabuleiro, false); //Verificando se alguem ganhou na diagonal principal
+        }
+
+        if (!fimDeJogo)
+        {
+            fimDeJogo = verificaDiagonalInversa(tabuleiro, false); //Verificando se alguem ganhou na diagonal inversa
+        }
+
+        if (!fimDeJogo && contadorJogo == 9){
+            Console.WriteLine("--- Deu velha! ---");
+            fimDeJogo = true;
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaLinhas(char[,] tabuleiro, bool fimDeJogo)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            int contadorJ1 = 0;
+            int contadorJ2 = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (tabuleiro[i, j] == 'X')
+                {
+                    contadorJ1++;
+                }
+                else if (tabuleiro[i, j] == 'O')
+                {
+                    contadorJ2++;
+                }
+            }
+            if (contadorJ1 == 3)
+            {
+                Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+            else if (contadorJ2 == 3)
+            {
+                Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaColunas(char[,] tabuleiro, bool fimDeJogo)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            int contadorJ1 = 0;
+            int contadorJ2 = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (tabuleiro[j, i] == 'X')
+                {
+                    contadorJ1++;
+                }
+                else if (tabuleiro[j, i] == 'O')
+                {
+                    contadorJ2++;
+                }
+            }
+            if (contadorJ1 == 3)
+            {
+                Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+            else if (contadorJ2 == 3)
+            {
+                Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaDiagonalPrincipal(char[,] tabuleiro, bool fimDeJogo)
+    {
+        int contadorJ1 = 0;
+        int contadorJ2 = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (i == j)
+                {
+                    if (tabuleiro[j, i] == 'X')
+                    {
+                        contadorJ1++;
+                    }
+                    else if (tabuleiro[j, i] == 'O')
+                    {
+                        contadorJ2++;
+                    }
+                }
+            }
+            if (contadorJ1 == 3)
+            {
+                Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+            else if (contadorJ2 == 3)
+            {
+                Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaDiagonalInversa(char[,] tabuleiro, bool fimDeJogo)
+    {
+        int contadorJ1 = 0;
+        int contadorJ2 = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (i + j == 2)
+                {
+                    if (tabuleiro[j, i] == 'X')
+                    {
+                        contadorJ1++;
+                    }
+                    else if (tabuleiro[j, i] == 'O')
+                    {
+                        contadorJ2++;
+                    }
+                }
+            }
+            if (contadorJ1 == 3)
+            {
+                Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+            else if (contadorJ2 == 3)
+            {
+                Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+        }
+
+        return fimDeJogo;
     }
 }
