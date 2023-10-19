@@ -11,9 +11,43 @@ Extra:
 3) Para facilitar, faça com que o computador inicie jogando.
 */
 
-class DesafioJogoDaVelhaPvP
+
+public class DesafioJogoDaVelha
 {
     public static void Main()
+    {
+        int op;
+
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("\r\n     ██╗ ██████╗  ██████╗  ██████╗     ██████╗  █████╗     ██╗   ██╗███████╗██╗     ██╗  ██╗ █████╗ \r\n     ██║██╔═══██╗██╔════╝ ██╔═══██╗    ██╔══██╗██╔══██╗    ██║   ██║██╔════╝██║     ██║  ██║██╔══██╗" +
+                "\r\n     ██║██║   ██║██║  ███╗██║   ██║    ██║  ██║███████║    ██║   ██║█████╗  ██║     ███████║███████║\r\n██   ██║██║   ██║██║   ██║██║   ██║    ██║  ██║██╔══██║    ╚██╗ ██╔╝██╔══╝  ██║     ██╔══██║██╔══██║\r\n╚█████╔╝╚██████╔╝" +
+                "╚██████╔╝╚██████╔╝    ██████╔╝██║  ██║     ╚████╔╝ ███████╗███████╗██║  ██║██║  ██║\r\n ╚════╝  ╚═════╝  ╚═════╝  ╚═════╝     ╚═════╝ ╚═╝  ╚═╝      ╚═══╝  ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝\r\n                                        " +
+                "                                                            \r\n");
+
+            Console.Write("Que modo deseja jogar?\n1 - P vs P\n2 - P vs PC\n3 - Sair\nSua opção: ");
+            op = int.Parse(Console.ReadLine());
+
+            switch (op)
+            {
+                case 1:
+                    PvP();
+                    break;
+                case 2:
+                    PvPC();
+                    break;
+                case 3:
+                    Console.WriteLine("Obrigado por jogar! Saindo do sistema...");
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida! Tente novamente.");
+                    break;
+            }
+        } while (op != 3);
+    }
+
+    public static void PvP()
     {
         char[,] tabuleiro = new char[3, 3];
         int contadorJogo = 0, resposta;
@@ -31,8 +65,8 @@ class DesafioJogoDaVelhaPvP
 
             printTabuleiro(tabuleiro);
 
-            fimDeJogo = verificaGanhador(tabuleiro, contadorJogo, false); //Verificando se alguém ganhou
-            
+            fimDeJogo = verificaGanhadorPvP(tabuleiro, contadorJogo, false); //Verificando se alguém ganhou
+
 
 
             if (!fimDeJogo)
@@ -42,7 +76,7 @@ class DesafioJogoDaVelhaPvP
 
                 printTabuleiro(tabuleiro);
 
-                fimDeJogo = verificaGanhador(tabuleiro, contadorJogo, false);
+                fimDeJogo = verificaGanhadorPvP(tabuleiro, contadorJogo, false);
             }
 
             if (fimDeJogo) //Checando se o usuário deseja jogar novamente
@@ -53,7 +87,6 @@ class DesafioJogoDaVelhaPvP
 
                 if (resposta != 1)
                 {
-                    Console.WriteLine("Obrigado por jogar! Saindo do sistema...\n");
                     break;
                 }
                 else
@@ -66,6 +99,57 @@ class DesafioJogoDaVelhaPvP
         } while (true);
     }
 
+    public static void PvPC()
+    {
+        char[,] tabuleiro = new char[3, 3];
+        int contadorJogo = 0, resposta;
+        bool fimDeJogo = false;
+
+        do
+        {
+            if (contadorJogo == 0) //Inicializando o tabuleiro
+            {
+                inicializarTabuleiro(tabuleiro);
+            }
+
+            realizarJogadaPc(tabuleiro); //Realizando a jogada do Computador
+            contadorJogo++;
+
+            printTabuleiro(tabuleiro);
+
+            fimDeJogo = verificaGanhadorPvPC(tabuleiro, contadorJogo, false); //Verificando se alguém ganhou
+
+
+
+            if (!fimDeJogo)
+            {
+                realizarJogadaP(tabuleiro); //Realizando a jogada do Jogador
+                contadorJogo++;
+
+                printTabuleiro(tabuleiro);
+
+                fimDeJogo = verificaGanhadorPvPC(tabuleiro, contadorJogo, false);
+            }
+
+            if (fimDeJogo) //Checando se o usuário deseja jogar novamente
+            {
+                Console.WriteLine("Deseja jogar novamente? (1 para sim, qualquer tecla para não)");
+                Console.Write("Opção: ");
+                resposta = int.Parse(Console.ReadLine());
+
+                if (resposta != 1)
+                {
+                    break;
+                }
+                else
+                {
+                    contadorJogo = 0;
+                    fimDeJogo = false;
+                }
+            }
+
+        } while (true);
+    }
 
     static void printTabuleiro(char[,] tabuleiro)
     {
@@ -142,27 +226,96 @@ class DesafioJogoDaVelhaPvP
             }
         } while (!jogadaValida);
     }
-    
+
+    static void realizarJogadaP(char[,] tabuleiro)
+    {
+        int jogada, contador = 0;
+        bool jogadaValida = false;
+
+        do
+        {
+            Console.WriteLine($"\nTurno do Jogador (X)\nEm que posição deseja jogar: ");
+            jogada = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    contador++;
+                    if (contador == jogada)
+                    {
+                        if (tabuleiro[i, j] != ' ')
+                        {
+                            Console.WriteLine("Posição preenchida! Tente novamente.");
+                        }
+                        else
+                        {
+                            tabuleiro[i, j] = 'X';
+                            jogadaValida = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        } while (!jogadaValida);
+    }
+
+    static void realizarJogadaPc(char[,] tabuleiro)
+    {
+        int jogadaPC, contador = 0;
+        bool jogadaValida = false;
+        Random randomint = new Random();
+
+        do
+        {
+            jogadaPC = randomint.Next(0, 10);
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    contador++;
+                    if (contador == jogadaPC)
+                    {
+                        if (tabuleiro[i, j] != ' ')
+                        {
+                            jogadaValida = false;
+                        }
+                        else
+                        {
+                            tabuleiro[i, j] = 'O';
+                            jogadaValida = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        } while (!jogadaValida);
+
+        Console.WriteLine("\nTurno do Computador (O)\n");
+    }
+
     static bool verificaGanhadorPvP(char[,] tabuleiro, int contadorJogo, bool fimDeJogo)
     {
         fimDeJogo = verificaLinhasPvP(tabuleiro, false); //Verificando se alguem ganhou nas linhas
 
-        if (!fimDeJogo)
+        if (fimDeJogo == false)
         {
             fimDeJogo = verificaColunasPvP(tabuleiro, false); //Verificando se alguem ganhou nas colunas
         }
 
-        if (!fimDeJogo)
+        if (fimDeJogo == false)
         {
             fimDeJogo = verificaDiagonalPrincipalPvP(tabuleiro, false); //Verificando se alguem ganhou na diagonal principal
         }
 
-        if (!fimDeJogo)
+        if (fimDeJogo == false)
         {
             fimDeJogo = verificaDiagonalInversaPvP(tabuleiro, false); //Verificando se alguem ganhou na diagonal inversa
         }
 
-        if (!fimDeJogo && contadorJogo == 9){
+        if (contadorJogo == 9)
+        {
             Console.WriteLine("--- Deu velha! ---");
             fimDeJogo = true;
         }
@@ -174,22 +327,22 @@ class DesafioJogoDaVelhaPvP
     {
         fimDeJogo = verificaLinhasPvPC(tabuleiro, false); //Verificando se alguem ganhou nas linhas
 
-        if (!fimDeJogo)
+        if (fimDeJogo == false)
         {
             fimDeJogo = verificaColunasPvPC(tabuleiro, false); //Verificando se alguem ganhou nas colunas
         }
 
-        if (!fimDeJogo)
+        if (fimDeJogo == false)
         {
             fimDeJogo = verificaDiagonalPrincipalPvPC(tabuleiro, false); //Verificando se alguem ganhou na diagonal principal
         }
 
-        if (!fimDeJogo)
+        if (fimDeJogo == false)
         {
             fimDeJogo = verificaDiagonalInversaPvPC(tabuleiro, false); //Verificando se alguem ganhou na diagonal inversa
         }
 
-        if (!fimDeJogo && contadorJogo == 9)
+        if (contadorJogo == 9)
         {
             Console.WriteLine("--- Deu velha! ---");
             fimDeJogo = true;
@@ -334,6 +487,150 @@ class DesafioJogoDaVelhaPvP
             else if (contadorJ2 == 3)
             {
                 Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaLinhasPvPC(char[,] tabuleiro, bool fimDeJogo)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            int contadorJ = 0;
+            int contadorPC = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (tabuleiro[i, j] == 'X')
+                {
+                    contadorJ++;
+                }
+                else if (tabuleiro[i, j] == 'O')
+                {
+                    contadorPC++;
+                }
+            }
+            if (contadorJ == 3)
+            {
+                Console.WriteLine("--- Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+            else if (contadorPC == 3)
+            {
+                Console.WriteLine("--- Computador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaColunasPvPC(char[,] tabuleiro, bool fimDeJogo)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            int contadorJ = 0;
+            int contadorPC = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (tabuleiro[j, i] == 'X')
+                {
+                    contadorJ++;
+                }
+                else if (tabuleiro[j, i] == 'O')
+                {
+                    contadorPC++;
+                }
+            }
+            if (contadorJ == 3)
+            {
+                Console.WriteLine("--- Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+            else if (contadorPC == 3)
+            {
+                Console.WriteLine("--- Computador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaDiagonalPrincipalPvPC(char[,] tabuleiro, bool fimDeJogo)
+    {
+        int contadorJ = 0;
+        int contadorPC = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (i == j)
+                {
+                    if (tabuleiro[j, i] == 'X')
+                    {
+                        contadorJ++;
+                    }
+                    else if (tabuleiro[j, i] == 'O')
+                    {
+                        contadorPC++;
+                    }
+                }
+            }
+            if (contadorJ == 3)
+            {
+                Console.WriteLine("--- Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+            else if (contadorPC == 3)
+            {
+                Console.WriteLine("--- Computador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaDiagonalInversaPvPC(char[,] tabuleiro, bool fimDeJogo)
+    {
+        int contadorJ = 0;
+        int contadorPC = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (i + j == 2)
+                {
+                    if (tabuleiro[j, i] == 'X')
+                    {
+                        contadorJ++;
+                    }
+                    else if (tabuleiro[j, i] == 'O')
+                    {
+                        contadorPC++;
+                    }
+                }
+            }
+            if (contadorJ == 3)
+            {
+                Console.WriteLine("--- Jogador foi o vencedor! ---");
+                fimDeJogo = true;
+                break;
+            }
+            else if (contadorPC == 3)
+            {
+                Console.WriteLine("--- Computador foi o vencedor! ---");
                 fimDeJogo = true;
                 break;
             }
