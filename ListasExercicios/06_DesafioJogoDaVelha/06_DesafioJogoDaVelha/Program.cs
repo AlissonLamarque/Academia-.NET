@@ -143,23 +143,23 @@ class DesafioJogoDaVelhaPvP
         } while (!jogadaValida);
     }
     
-    static bool verificaGanhador(char[,] tabuleiro, int contadorJogo, bool fimDeJogo)
+    static bool verificaGanhadorPvP(char[,] tabuleiro, int contadorJogo, bool fimDeJogo)
     {
-        fimDeJogo = verificaLinhas(tabuleiro, false); //Verificando se alguem ganhou nas linhas
+        fimDeJogo = verificaLinhasPvP(tabuleiro, false); //Verificando se alguem ganhou nas linhas
 
         if (!fimDeJogo)
         {
-            fimDeJogo = verificaColunas(tabuleiro, false); //Verificando se alguem ganhou nas colunas
+            fimDeJogo = verificaColunasPvP(tabuleiro, false); //Verificando se alguem ganhou nas colunas
         }
 
         if (!fimDeJogo)
         {
-            fimDeJogo = verificaDiagonalPrincipal(tabuleiro, false); //Verificando se alguem ganhou na diagonal principal
+            fimDeJogo = verificaDiagonalPrincipalPvP(tabuleiro, false); //Verificando se alguem ganhou na diagonal principal
         }
 
         if (!fimDeJogo)
         {
-            fimDeJogo = verificaDiagonalInversa(tabuleiro, false); //Verificando se alguem ganhou na diagonal inversa
+            fimDeJogo = verificaDiagonalInversaPvP(tabuleiro, false); //Verificando se alguem ganhou na diagonal inversa
         }
 
         if (!fimDeJogo && contadorJogo == 9){
@@ -170,7 +170,35 @@ class DesafioJogoDaVelhaPvP
         return fimDeJogo;
     }
 
-    static bool verificaLinhas(char[,] tabuleiro, bool fimDeJogo)
+    static bool verificaGanhadorPvPC(char[,] tabuleiro, int contadorJogo, bool fimDeJogo)
+    {
+        fimDeJogo = verificaLinhasPvPC(tabuleiro, false); //Verificando se alguem ganhou nas linhas
+
+        if (!fimDeJogo)
+        {
+            fimDeJogo = verificaColunasPvPC(tabuleiro, false); //Verificando se alguem ganhou nas colunas
+        }
+
+        if (!fimDeJogo)
+        {
+            fimDeJogo = verificaDiagonalPrincipalPvPC(tabuleiro, false); //Verificando se alguem ganhou na diagonal principal
+        }
+
+        if (!fimDeJogo)
+        {
+            fimDeJogo = verificaDiagonalInversaPvPC(tabuleiro, false); //Verificando se alguem ganhou na diagonal inversa
+        }
+
+        if (!fimDeJogo && contadorJogo == 9)
+        {
+            Console.WriteLine("--- Deu velha! ---");
+            fimDeJogo = true;
+        }
+
+        return fimDeJogo;
+    }
+
+    static bool verificaLinhasPvP(char[,] tabuleiro, bool fimDeJogo)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -204,7 +232,7 @@ class DesafioJogoDaVelhaPvP
         return fimDeJogo;
     }
 
-    static bool verificaColunas(char[,] tabuleiro, bool fimDeJogo)
+    static bool verificaColunasPvP(char[,] tabuleiro, bool fimDeJogo)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -238,7 +266,7 @@ class DesafioJogoDaVelhaPvP
         return fimDeJogo;
     }
 
-    static bool verificaDiagonalPrincipal(char[,] tabuleiro, bool fimDeJogo)
+    static bool verificaDiagonalPrincipalPvP(char[,] tabuleiro, bool fimDeJogo)
     {
         int contadorJ1 = 0;
         int contadorJ2 = 0;
@@ -276,7 +304,7 @@ class DesafioJogoDaVelhaPvP
         return fimDeJogo;
     }
 
-    static bool verificaDiagonalInversa(char[,] tabuleiro, bool fimDeJogo)
+    static bool verificaDiagonalInversaPvP(char[,] tabuleiro, bool fimDeJogo)
     {
         int contadorJ1 = 0;
         int contadorJ2 = 0;
