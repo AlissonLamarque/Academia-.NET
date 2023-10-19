@@ -205,6 +205,7 @@ public class DesafioJogoDaVelha
                         if (tabuleiro[i, j] != ' ')
                         {
                             Console.WriteLine("Posição preenchida! Tente novamente.");
+                            contador = 0;
                         }
                         else
                         {
@@ -247,6 +248,7 @@ public class DesafioJogoDaVelha
                         if (tabuleiro[i, j] != ' ')
                         {
                             Console.WriteLine("Posição preenchida! Tente novamente.");
+                            contador = 0;
                         }
                         else
                         {
@@ -280,6 +282,7 @@ public class DesafioJogoDaVelha
                         if (tabuleiro[i, j] != ' ')
                         {
                             jogadaValida = false;
+                            contador = 0;
                         }
                         else
                         {
