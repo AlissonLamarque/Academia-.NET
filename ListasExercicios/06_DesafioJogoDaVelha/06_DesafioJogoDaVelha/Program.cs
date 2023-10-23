@@ -112,7 +112,7 @@ public class DesafioJogoDaVelha
                 inicializarTabuleiro(tabuleiro);
             }
 
-            realizarJogadaPc(tabuleiro, contadorJogo); //Realizando a jogada do Computador
+            realizarJogadaP(tabuleiro); //Realizando a jogada do Computador
             contadorJogo++;
 
             printTabuleiro(tabuleiro);
@@ -122,7 +122,7 @@ public class DesafioJogoDaVelha
 
             if (fimDeJogo == 0)
             {
-                realizarJogadaP(tabuleiro); //Realizando a jogada do Jogador
+                realizarJogadaPC(tabuleiro); //Realizando a jogada do Jogador
                 contadorJogo++;
 
                 printTabuleiro(tabuleiro);
@@ -240,17 +240,121 @@ public class DesafioJogoDaVelha
         }
     }
 
-    static void realizarJogadaPc(char[,] tabuleiro, int contadorJogo)
+    static void realizarJogadaPC(char[,] tabuleiro)
     {
         bool jogada = false;
 
-        if (contadorJogo == 0)
+        if (!jogada)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                int contador1 = 0, contador2 = 0;
+
+                if (!jogada)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        if (tabuleiro[i, j] == 'X')
+                        {
+                            contador1++;
+                        }
+                        else if (tabuleiro[i, j] == 'O')
+                        {
+                            contador2++;
+                        }
+                        if (contador2 == 2)
+                        {
+                            if (!jogada)
+                            {
+                                for (int x = 0; x < 3; x++)
+                                {
+                                    if (tabuleiro[i, x] == ' ')
+                                    {
+                                        tabuleiro[i, x] = 'O';
+                                        jogada = true;
+                                        Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
+                                    }
+                                }
+                            }
+                        }
+                        else if (contador1 == 2)
+                        {
+                            if (!jogada)
+                            {
+                                for (int x = 0; x < 3; x++)
+                                {
+                                    if (tabuleiro[i, x] == ' ')
+                                    {
+                                        tabuleiro[i, x] = 'O';
+                                        jogada = true;
+                                        Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } //Verificando as linhas
+        if (!jogada)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                int contador1 = 0, contador2 = 0;
+
+                if (!jogada)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        if (tabuleiro[j, i] == 'X')
+                        {
+                            contador1++;
+                        }
+                        else if(tabuleiro[j, i] == 'O')
+                        {
+                            contador2++;
+                        }
+                        if (contador2 == 2)
+                        {
+                            if (!jogada)
+                            {
+                                for (int x = 0; x < 3; x++)
+                                {
+                                    if (tabuleiro[x, i] == ' ')
+                                    {
+                                        tabuleiro[x, i] = 'O';
+                                        jogada = true;
+                                        Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
+                                    }
+                                }
+                            }
+                        }
+                        else if(contador1 == 2)
+                        {
+                            if (!jogada)
+                            {
+                                for (int x = 0; x < 3; x++)
+                                {
+                                    if (tabuleiro[x, i] == ' ')
+                                    {
+                                        tabuleiro[x, i] = 'O';
+                                        jogada = true;
+                                        Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } //Verificando as colunas
+        if (!jogada)
         {
             for (int i = 0; i <= 2; i += 2)
             {
                 if (!jogada)
                 {
-                    for (int j = 0; j <= 3; j += 3)
+                    for (int j = 0; j <= 2; j += 2)
                     {
                         if (!jogada)
                         {
@@ -264,112 +368,28 @@ public class DesafioJogoDaVelha
                     }
                 }
             }
-        }
-        else
+        } //Caso outros if's não se realizem joga em uma das extremidades
+        if (!jogada)
         {
-            if (!jogada)
+            for (int i = 0; i < 3; i++)
             {
-                for (int i = 0; i < 3; i++)
-                {
-                    int contador1 = 0;
-
-                    if (!jogada)
-                    {
-                        for (int j = 0; j < 3; j++)
-                        {
-                            if (tabuleiro[i, j] == 'X')
-                            {
-                                contador1++;
-                            }
-                            if (contador1 == 2)
-                            {
-                                if (!jogada)
-                                {
-                                    for (int x = 0; x < 3; x++)
-                                    {
-                                        if (tabuleiro[i, x] == ' ')
-                                        {
-                                            tabuleiro[i, x] = 'O';
-                                            jogada = true;
-                                            Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            } //Verificando as linhas
-            else if (!jogada)
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    int contador1 = 0;
-
-                    if (!jogada)
-                    {
-                        for (int j = 0; j < 3; j++)
-                        {
-                            if (tabuleiro[j, i] == 'X')
-                            {
-                                contador1++;
-                            }
-                            if (contador1 == 2)
-                            {
-                                if (!jogada)
-                                {
-                                    for (int x = 0; x < 3; x++)
-                                    {
-                                        if (tabuleiro[x, i] == ' ')
-                                        {
-                                            tabuleiro[x, i] = 'O';
-                                            jogada = true;
-                                            Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            } //Verificando as colunas
-            else if (!jogada) 
-            {
-                int contador1 = 0;
-
-                for (int i = 0; i < 3; i++)
+                if (!jogada)
                 {
                     for (int j = 0; j < 3; j++)
                     {
-                        if (i == j)
+                        if (!jogada)
                         {
-                            if (tabuleiro[j, i] == 'X')
+                            if (tabuleiro[i, j] == ' ')
                             {
-                                contador1++;
+                                tabuleiro[i, j] = 'O';
+                                jogada = true;
+                                Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
                             }
                         }
                     }
                 }
-            } //Verificando a diagonal principal
-            else if (!jogada) 
-            {
-                int contador1 = 0;
-
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        if (i + j == 2)
-                        {
-                            if (tabuleiro[j, i] == 'X')
-                            {
-                                contador1++;
-                            }
-                        }
-                    }
-                }
-            } //Verificando a diagonal inversa
-        }
+            }
+        } //Caso nenhum dos if's se realize o PC jogara na primeira posição válida que encontrar
     }
 
     static void declararVitoria(int fimDeJogo, int modoDeJogo)
@@ -427,7 +447,6 @@ public class DesafioJogoDaVelha
 
         if (fimDeJogo == 0 && contadorJogo == 9)
         {
-            Console.WriteLine("--- Deu velha! ---");
             fimDeJogo = 3;
         }
 
@@ -557,13 +576,11 @@ public class DesafioJogoDaVelha
             }
             if (contador1 == 3)
             {
-                Console.WriteLine("--- 1º Jogador foi o vencedor! ---");
                 fimDeJogo = 1;
                 break;
             }
             else if (contador2 == 3)
             {
-                Console.WriteLine("--- 2º Jogador foi o vencedor! ---");
                 fimDeJogo = 2;
                 break;
             }
