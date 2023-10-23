@@ -310,7 +310,7 @@ public class DesafioJogoDaVelha
                         {
                             contador1++;
                         }
-                        else if(tabuleiro[j, i] == 'O')
+                        else if (tabuleiro[j, i] == 'O')
                         {
                             contador2++;
                         }
@@ -329,7 +329,7 @@ public class DesafioJogoDaVelha
                                 }
                             }
                         }
-                        else if(contador1 == 2)
+                        else if (contador1 == 2)
                         {
                             if (!jogada)
                             {
@@ -348,6 +348,134 @@ public class DesafioJogoDaVelha
                 }
             }
         } //Verificando as colunas
+        if (!jogada)
+        {
+            int contador1 = 0, contador2 = 0;
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (i == j)
+                    {
+                        if (tabuleiro[i, j] == 'X')
+                        {
+                            contador1++;
+                        }
+                        else if (i == j)
+                        {
+                            contador2++;
+                        }
+                        if (contador2 == 2)
+                        {
+                            for (int x = 0; x < 3; x++)
+                            {
+                                for (int z = 0; z < 3; z++)
+                                {
+                                    if (x == z)
+                                    {
+                                        if (!jogada)
+                                        {
+                                            if (tabuleiro[x, z] == ' ')
+                                            {
+                                                tabuleiro[x, z] = 'O';
+                                                jogada = true;
+                                                Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        else if (contador1 == 2)
+                        {
+                            for (int x = 0; x < 3; x++)
+                            {
+                                for (int z = 0; z < 3; z++)
+                                {
+                                    if (x == z)
+                                    {
+                                        if (!jogada)
+                                        {
+                                            if (tabuleiro[x, z] == ' ')
+                                            {
+                                                tabuleiro[x, z] = 'O';
+                                                jogada = true;
+                                                Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } //Verificando a diagonal principal
+        if (!jogada)
+        {
+            int contador1 = 0, contador2 = 0;
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (i + j == 2)
+                    {
+                        if (tabuleiro[i, j] == 'X')
+                        {
+                            contador1++;
+                        }
+                        else if (i == j)
+                        {
+                            contador2++;
+                        }
+                        if (contador2 == 2)
+                        {
+                            for (int x = 0; x < 3; x++)
+                            {
+                                for (int z = 0; z < 3; z++)
+                                {
+                                    if (x + z == 2)
+                                    {
+                                        if (!jogada)
+                                        {
+                                            if (tabuleiro[x, z] == ' ')
+                                            {
+                                                tabuleiro[x, z] = 'O';
+                                                jogada = true;
+                                                Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        else if (contador1 == 2)
+                        {
+                            for (int x = 0; x < 3; x++)
+                            {
+                                for (int z = 0; z < 3; z++)
+                                {
+                                    if (x + z == 2)
+                                    {
+                                        if (!jogada)
+                                        {
+                                            if (tabuleiro[x, z] == ' ')
+                                            {
+                                                tabuleiro[x, z] = 'O';
+                                                jogada = true;
+                                                Console.WriteLine($"\nTurno do Computador (O)\nEle jogou na posição {tabuleiro[i, j]}");
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } //Verificando a diagonal inversa
         if (!jogada)
         {
             for (int i = 0; i <= 2; i += 2)
