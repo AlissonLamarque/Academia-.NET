@@ -1,2 +1,2 @@
 # exerciciosAcademia
-Repositório direcionado para exercícios da Academia .NET da Atos
+Repositório direcionado para a Academia .NET da Atos
