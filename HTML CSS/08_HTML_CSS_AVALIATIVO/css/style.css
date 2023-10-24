@@ -1,0 +1,41 @@
+body{
+    background-image: url(..\img\wpp.jpg);
+    background-size:contain;
+    font-family: 'Roboto', sans-serif;
+    color: antiquewhite;
+    display: flexbox;
+}
+
+header{
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 2.5rem;
+    justify-self: center;
+    text-align: center;
+}
+
+#apresentacao{
+    background-color: black;
+}
+#catalogo{
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+i{
+    color: black;
+    font-size: 200%;
+}
