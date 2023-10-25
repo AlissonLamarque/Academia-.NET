@@ -31,11 +31,11 @@ public class Exercicio10
         moeda1 = (valor - constante) / 1;
 
         Console.WriteLine($"- {nota100} notas de 100 reais\n" +
-            $"- {nota50} notas de 50 reais\n" +
-            $"- {nota20} notas de 20 reais\n" +
-            $"- {nota10} notas de 10 reais\n" +
-            $"- {nota5} notas de 5 reais\n" +
-            $"- {nota2} notas de 2 reais\n" +
-            $"- {moeda1} moedas de 1 real\n");
+            $"- {nota50} nota(s) de 50 reais\n" +
+            $"- {nota20} nota(s) de 20 reais\n" +
+            $"- {nota10} nota(s) de 10 reais\n" +
+            $"- {nota5} nota(s) de 5 reais\n" +
+            $"- {nota2} nota(s) de 2 reais\n" +
+            $"- {moeda1} moeda(s) de 1 real\n");
     }
 }

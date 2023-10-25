@@ -4,7 +4,7 @@ namespace Programa
 {
     public class exercicio01
     {
-        public static void Main(String[] args)
+        public static void Main()
         {
             float x, y, z, a, media;
 
