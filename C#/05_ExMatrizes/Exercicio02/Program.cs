@@ -10,7 +10,7 @@ Informe ao usuário:
 
 public class Exercicio02
 {
-	public static void Main(string[] args)
+	public static void Main()
 	{
 		int[,] matriz = new int[3, 3];
         int linha = matriz.GetLength(0);

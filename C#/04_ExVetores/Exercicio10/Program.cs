@@ -3,7 +3,7 @@
 
 public class Exercicio10
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int[] vetor = new int[20];
         int[] vetor2 = new int[20];

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções\\07_ListaFunções\\Exercicio02\\Exercicio02.csproj",
+      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções\\Exercicio02\\Exercicio02.csproj",
       "projectName": "Exercicio02",
-      "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções\\07_ListaFunções\\Exercicio02\\Exercicio02.csproj",
+      "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções\\Exercicio02\\Exercicio02.csproj",
       "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções\\07_ListaFunções\\Exercicio02\\obj\\",
+      "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções\\Exercicio02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aliss\\AppData\\Roaming\\NuGet\\NuGet.Config",

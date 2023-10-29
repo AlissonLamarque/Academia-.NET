@@ -1,10 +1,8 @@
 ﻿//1. Escreva um algoritmo para ler um número n, e em seguida ler pelo teclado a idade de n pessoas e calcular a média das idades.
 
-using System;
-
 public class Exercicio01
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int temp = 0, contador = 0, quant = 0, idade = 0;
         string idadeString, quantString;

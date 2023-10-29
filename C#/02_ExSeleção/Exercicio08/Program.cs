@@ -6,7 +6,7 @@ total de vendas.  */
 
 public class Exercicio08
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Código: ");
         int codigo = int.Parse(Console.ReadLine());

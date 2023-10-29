@@ -2,7 +2,7 @@
 
 public class Exercicio02
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int maior = 0;
 

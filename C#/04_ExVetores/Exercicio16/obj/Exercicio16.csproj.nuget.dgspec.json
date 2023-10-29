@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\04_ExVetores\\Exercicio16\\Exercicio16.csproj": {}
+    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\04_ExVetores\\Exercicio16\\Exercicio16.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\04_ExVetores\\Exercicio16\\Exercicio16.csproj": {
+    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\04_ExVetores\\Exercicio16\\Exercicio16.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\04_ExVetores\\Exercicio16\\Exercicio16.csproj",
+        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\04_ExVetores\\Exercicio16\\Exercicio16.csproj",
         "projectName": "Exercicio16",
-        "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\04_ExVetores\\Exercicio16\\Exercicio16.csproj",
+        "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\04_ExVetores\\Exercicio16\\Exercicio16.csproj",
         "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\04_ExVetores\\Exercicio16\\obj\\",
+        "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\04_ExVetores\\Exercicio16\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aliss\\AppData\\Roaming\\NuGet\\NuGet.Config",

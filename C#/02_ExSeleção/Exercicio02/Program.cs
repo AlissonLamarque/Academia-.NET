@@ -2,7 +2,7 @@
 
 public class Exercicio02
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Digite um número: ");
         int numero = int.Parse(Console.ReadLine());

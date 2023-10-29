@@ -3,7 +3,7 @@ O programa deve mostrar os dados do atleta mais novo e mais alto. */
 
 public class Exercicio10
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("1º ATLETA");
         Console.WriteLine("Nome: ");

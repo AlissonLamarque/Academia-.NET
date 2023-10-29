@@ -2,7 +2,7 @@
 
 public class Exercicio03
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Digite o numero que deseja ver a tabuada: ");
         string numero = Console.ReadLine();

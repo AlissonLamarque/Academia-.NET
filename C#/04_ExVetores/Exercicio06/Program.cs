@@ -5,7 +5,7 @@ b.	escreve: 	|22|7|31|63|0|21|9|3|40|7| */
 
 public class Exercicio06
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int[] vetor = new int[10];
 

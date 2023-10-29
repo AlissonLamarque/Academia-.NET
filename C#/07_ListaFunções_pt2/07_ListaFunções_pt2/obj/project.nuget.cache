@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MnyNTYK0gqGLGjb4UF0nXv2m4IPYMeildPGny2REuZV/EdFCa0/6ZO6VXW5fwi02NwRLCh28nebyubaf6z3ODw==",
+  "dgSpecHash": "RJqHRfrG6Irl+CEKFfjr8eojrFu/TEpNUjjRSsV9y/3FO1CEdeQckiPuxPOy6CG9WPfyO8FHJ25My/OKtmLpTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções_pt2\\07_ListaFunções_pt2\\07_ListaFunções_pt2.csproj",
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções_pt2\\07_ListaFunções_pt2\\07_ListaFunções_pt2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aliss\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",

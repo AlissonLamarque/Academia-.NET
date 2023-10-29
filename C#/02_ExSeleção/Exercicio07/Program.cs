@@ -4,7 +4,7 @@ exemplo, A palavra encontra-se na frase   ou A palavra não se encontra na frase
 
 public class Exercicio07
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Digite uma frase: ");
         string frase = Console.ReadLine();

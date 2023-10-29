@@ -11,7 +11,7 @@ maior que 35                -> obesidade grau sério */
 
 public class Exercicio06
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Nome: ");
         string nomeMin = Console.ReadLine();

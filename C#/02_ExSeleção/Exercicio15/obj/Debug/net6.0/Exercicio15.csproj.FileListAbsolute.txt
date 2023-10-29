@@ -12,3 +12,17 @@ C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\List
 C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\Lista02\Exercicio15\obj\Debug\net6.0\Exercicio15.pdb
 C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\Lista02\Exercicio15\obj\Debug\net6.0\Exercicio15.genruntimeconfig.cache
 C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\Lista02\Exercicio15\obj\Debug\net6.0\ref\Exercicio15.dll
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\bin\Debug\net6.0\Exercicio15.exe
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\bin\Debug\net6.0\Exercicio15.deps.json
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\bin\Debug\net6.0\Exercicio15.runtimeconfig.json
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\bin\Debug\net6.0\Exercicio15.dll
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\bin\Debug\net6.0\Exercicio15.pdb
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\Exercicio15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\Exercicio15.AssemblyInfoInputs.cache
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\Exercicio15.AssemblyInfo.cs
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\Exercicio15.csproj.CoreCompileInputs.cache
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\Exercicio15.dll
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\refint\Exercicio15.dll
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\Exercicio15.pdb
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\Exercicio15.genruntimeconfig.cache
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\02_ExSeleção\Exercicio15\obj\Debug\net6.0\ref\Exercicio15.dll

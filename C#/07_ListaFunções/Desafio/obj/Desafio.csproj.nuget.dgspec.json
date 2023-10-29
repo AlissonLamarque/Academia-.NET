@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções\\07_ListaFunções\\Desafio\\Desafio.csproj": {}
+    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções\\Desafio\\Desafio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções\\07_ListaFunções\\Desafio\\Desafio.csproj": {
+    "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções\\Desafio\\Desafio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções\\07_ListaFunções\\Desafio\\Desafio.csproj",
+        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções\\Desafio\\Desafio.csproj",
         "projectName": "Desafio",
-        "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções\\07_ListaFunções\\Desafio\\Desafio.csproj",
+        "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções\\Desafio\\Desafio.csproj",
         "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\07_ListaFunções\\07_ListaFunções\\Desafio\\obj\\",
+        "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\07_ListaFunções\\Desafio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aliss\\AppData\\Roaming\\NuGet\\NuGet.Config",

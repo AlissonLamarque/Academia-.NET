@@ -4,7 +4,7 @@
 
 public class Exercicio03
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         do
         {

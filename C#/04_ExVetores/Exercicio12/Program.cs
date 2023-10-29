@@ -4,9 +4,10 @@
 
 public class Exercicio12
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int[] vetor = new int[10];
+        bool valorEncontrado = false;
 
         for (int i = 0; i < vetor.Length; i++)
         {
@@ -17,6 +18,18 @@ public class Exercicio12
         Console.WriteLine("Digite o valor que deseja encontrar no vetor: ");
         int valorPesquisa = int.Parse(Console.ReadLine());
 
+        for (int i = 0; i < vetor.Length; i++)
+        {
+            if (vetor[i] == valorPesquisa)
+            {
+                Console.WriteLine($"O valor foi encontrado no índice {i}");
+                valorEncontrado = true;
+            }
+        }
 
+        if (!valorEncontrado)
+        {
+            Console.WriteLine("O valor fornecido não existe no vetor");
+        }
     }
 }

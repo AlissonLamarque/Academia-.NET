@@ -6,7 +6,7 @@ No final do processamento, exibir o salário total e o salário excedente do ope
 
 public class Exercicio12
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int codigo, numeroHoras, extraHoras, extra, salario;
 

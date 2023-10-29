@@ -2,7 +2,7 @@
 
 public class Exercicio07
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int contPar = 0, contImpar = 0;
 

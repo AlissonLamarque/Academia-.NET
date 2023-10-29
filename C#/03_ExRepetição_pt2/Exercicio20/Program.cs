@@ -15,7 +15,7 @@ O final do conjunto de habitantes é reconhecido pelo valor -1 entrada como idad
 
 public class Exercicio29
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int sexo, maiorIdade = 0, idade;
         int corOlhos, corCabelo;
@@ -32,7 +32,7 @@ public class Exercicio29
             Console.WriteLine("Informe a cor dos olhos (0 - Azul/ 1 - Verde/ 2 - Castanho): ");
             corOlhos = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Informe a cor dos olhos (0 - Loiro/ 1 - Castanho/ 2 - Preto): ");
+            Console.WriteLine("Informe a cor do cabelo (0 - Loiro/ 1 - Castanho/ 2 - Preto): ");
             corCabelo = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Informe a idade: ");

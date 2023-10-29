@@ -3,7 +3,7 @@
 
 public class Exercicio01
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int[] vetor = new int[10];
         int contadorPar = 0, contadorImpar = 0;

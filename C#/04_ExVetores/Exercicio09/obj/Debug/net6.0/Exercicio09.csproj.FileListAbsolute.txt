@@ -12,3 +12,17 @@ C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\List
 C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\Lista04\Exercicio09\obj\Debug\net6.0\Exercicio09.pdb
 C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\Lista04\Exercicio09\obj\Debug\net6.0\Exercicio09.genruntimeconfig.cache
 C:\Users\aliss\Documentos\Academia ATOS\exerciciosAcademia\ListasExercicios\Lista04\Exercicio09\obj\Debug\net6.0\ref\Exercicio09.dll
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\bin\Debug\net6.0\Exercicio09.exe
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\bin\Debug\net6.0\Exercicio09.deps.json
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\bin\Debug\net6.0\Exercicio09.runtimeconfig.json
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\bin\Debug\net6.0\Exercicio09.dll
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\bin\Debug\net6.0\Exercicio09.pdb
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\Exercicio09.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\Exercicio09.AssemblyInfoInputs.cache
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\Exercicio09.AssemblyInfo.cs
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\Exercicio09.csproj.CoreCompileInputs.cache
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\Exercicio09.dll
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\refint\Exercicio09.dll
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\Exercicio09.pdb
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\Exercicio09.genruntimeconfig.cache
+C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio09\obj\Debug\net6.0\ref\Exercicio09.dll

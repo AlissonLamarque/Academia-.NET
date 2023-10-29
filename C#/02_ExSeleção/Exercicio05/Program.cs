@@ -3,7 +3,7 @@
 
 public class Exercicio05
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("1ª nota: ");
         float nota1 = float.Parse(Console.ReadLine());

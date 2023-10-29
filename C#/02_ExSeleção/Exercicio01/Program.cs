@@ -4,7 +4,7 @@ Teste se a base ou a altura digitada não foi igual a zero.  */
 
 public class Exercicio01
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         do
         {

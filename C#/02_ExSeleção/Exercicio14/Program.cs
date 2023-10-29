@@ -4,7 +4,7 @@ do arquivo usando este link (em minutos). */
 
 public class Exercicio14
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int mb, mbps, tempoDownload;
 

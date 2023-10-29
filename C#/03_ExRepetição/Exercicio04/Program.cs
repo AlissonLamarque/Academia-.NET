@@ -2,7 +2,7 @@
 
 public class Exercicio04
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int numTemp = 0, resultado = 1;
 

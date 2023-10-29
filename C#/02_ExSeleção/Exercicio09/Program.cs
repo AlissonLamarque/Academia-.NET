@@ -9,7 +9,7 @@ menor que 80, avisá-lo que é preciso diminuir 2 unidades de insulina. Se a mé
 
 public class Exercicio09
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("1º valor de glicemia: ");
         int valor1 = int.Parse(Console.ReadLine());

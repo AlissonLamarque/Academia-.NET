@@ -4,7 +4,7 @@ Lembre que usaremos o padrão de hora com 24h, de 0 a 23. */
 
 public class Exercicio11
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Hora: ");
         int hora = int.Parse(Console.ReadLine());

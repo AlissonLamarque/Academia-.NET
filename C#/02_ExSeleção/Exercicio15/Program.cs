@@ -5,7 +5,7 @@ Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço
 
 public class Exercicio15
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         double area, quantLatas, valor;
 

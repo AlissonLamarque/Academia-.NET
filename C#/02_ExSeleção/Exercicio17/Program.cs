@@ -4,7 +4,7 @@ os lados iguais), isoceles (somente 2 lados são iguais) ou escaleno (os 3 lados
 
 public class Exercicio17
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
 
     }

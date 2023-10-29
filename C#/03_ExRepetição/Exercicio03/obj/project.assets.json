@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\03_ExRepetição\\Exercicio03\\Exercicio03.csproj",
+      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\03_ExRepetição\\Exercicio03\\Exercicio03.csproj",
       "projectName": "Exercicio03",
-      "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\03_ExRepetição\\Exercicio03\\Exercicio03.csproj",
+      "projectPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\03_ExRepetição\\Exercicio03\\Exercicio03.csproj",
       "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\03_ExRepetição\\Exercicio03\\obj\\",
+      "outputPath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\03_ExRepetição\\Exercicio03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aliss\\AppData\\Roaming\\NuGet\\NuGet.Config",

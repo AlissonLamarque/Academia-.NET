@@ -3,7 +3,7 @@
 
 public class Exercicio04
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Horas de aula do 1º professor: ");
         int horas1 = int.Parse(Console.ReadLine());

@@ -4,7 +4,7 @@
 
 public class Exercicio01
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int numero = 0;
 

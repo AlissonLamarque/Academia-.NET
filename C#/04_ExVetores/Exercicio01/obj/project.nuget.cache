@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ezToXmF436SFE15LM3Yn+72a80CTMhxOhNR5bGz4k8xtj+qfmxQy3KL5N9esCcgGnP63fwwZDGXZeEutEZr/1Q==",
+  "dgSpecHash": "IIB+HfHfIAmaEaPK/WvWjIiZoHUQ6Hv58tJ+h4K4BUfG/0y09hsMQAEpUA63CfMrLmx9tJ0dklIoUpcrBFdw+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\exerciciosAcademia\\ListasExercicios\\04_ExVetores\\Exercicio01\\Exercicio01.csproj",
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\04_ExVetores\\Exercicio01\\Exercicio01.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aliss\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",

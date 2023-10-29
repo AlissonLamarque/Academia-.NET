@@ -5,7 +5,7 @@ Para mulheres: (62.1 * h) - 44.7 */
 
 public class Exercicio13
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         double h, pesoIdeal = 0;
         string sexo;
@@ -28,6 +28,6 @@ public class Exercicio13
             Console.WriteLine("Sexo informado inválido");
         }
 
-        Console.WriteLine($"Peso ideal: {pesoIdeal}");
+        Console.WriteLine($"Peso ideal: {pesoIdeal:F2}");
     }
 }

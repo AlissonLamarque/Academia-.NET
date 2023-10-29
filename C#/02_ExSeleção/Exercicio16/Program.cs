@@ -9,7 +9,7 @@ plus: caso ocorra um segundo jogo, leia o placar desse novo jogo e então diga q
 
 public class Exercicio16
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.WriteLine("Time da casa: ");
         int golsCasa = int.Parse(Console.ReadLine());

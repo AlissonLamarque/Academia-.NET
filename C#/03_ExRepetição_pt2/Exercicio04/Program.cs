@@ -7,7 +7,7 @@ de votos em branco.  */
 
 public class Exercicio04
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int joao = 0, zeca = 0, branco = 0;
 
@@ -40,7 +40,7 @@ public class Exercicio04
             }
         } while (true);
 
-        Console.WriteLine($"TOTAL DE VOTOS: \n Joao: {joao} votos \n Zeca: {zeca} votos \n Branco: {branco} votos");
+        Console.WriteLine($"TOTAL DE VOTOS: \n Joao: {joao} voto(s) \n Zeca: {zeca} voto(s) \n Branco: {branco} voto(s)");
 
     }
 }

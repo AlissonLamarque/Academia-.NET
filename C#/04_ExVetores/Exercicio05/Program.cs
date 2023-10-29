@@ -3,9 +3,9 @@
 
 public class Exercicio05
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
-        int[] vetor = new int[10];
+        int[] vetor = new int[80];
 
         for (int i = 0; i < vetor.Length; i++)
         {

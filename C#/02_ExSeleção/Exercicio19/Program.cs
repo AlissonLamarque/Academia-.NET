@@ -2,7 +2,7 @@
 
 public class Exercicio19
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
 
     }

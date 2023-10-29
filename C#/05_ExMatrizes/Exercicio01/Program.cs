@@ -3,7 +3,7 @@
 
 public class Exercicio01
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         int[,] matriz = new int[5, 3];
         int linha = matriz.GetLength(0);
