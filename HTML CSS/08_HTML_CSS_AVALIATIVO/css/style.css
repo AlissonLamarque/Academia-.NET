@@ -1,41 +1,141 @@
 body{
-    background-image: url(..\img\wpp.jpg);
-    background-size:contain;
-    font-family: 'Roboto', sans-serif;
-    color: antiquewhite;
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
     display: flexbox;
 }
 
-header{
-    background-color: black;
+/* Cabeçalho */
+header {
+    margin: -01% -01% 05% -01%;
+    padding: 100px;
+    background-image: url(../img/headerwpp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-footer{
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 60%;
-    height: 2.5rem;
-    justify-self: center;
+.navegacao{
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-#apresentacao{
-    background-color: black;
+.navegacao > *{
+    margin: 0px 100px 0px 100px;
 }
+
+.navegacao a{
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 1em;
+}
+
+.navegacao a:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: 0.5s ease-in;
+}
+/* /Cabeçalho */
+
+/* Conteúdo */
+#apresentacao2{
+    display: flex;
+}
+
+#p1{
+    text-align: center;
+    margin: 3% 1% 0% 10%;
+    font-size: 1.5em;
+}
+
+#img1{
+    height: 10%;
+    width: 20%;
+    outline: 3px solid black;
+}
+
+#p2{
+    text-align: center;
+    margin: 3% 10% 0% 1%;
+    font-size: 1.5em;
+}
+
+#contato{
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 10%;
+}
+
 #catalogo{
     display: flex;
-    background-color: black;
     justify-content: space-evenly;
     max-width: 100%;
 }
 
-img {
+#feedback{
+    font-size: 3em;
+    text-align: center;
+    padding: 20%;
+}
+
+#tabela{
+    font-size: 2.5em;
+    text-align: center;
+    color: navy;
+}
+
+.conteudo-tabela{
+    font-size: 0.8em;
+    color: black;
+    padding: 1%;
+}
+
+#V{
+    color: green;
+}
+
+#X{
+    color: red;
+}
+
+.frase{
+    text-align: center;
+    font-size: 2em;
+}
+
+.galeria {
     height: 200px;
     width: 200px;
+    margin-bottom: 2%;
+}
+
+.titulo{
+    font-size: 3em;
+    text-align: center;
+}
+
+.conteudo{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.conteudoS{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0% 10% 0% 10%;
+}
+/* /Conteúdo */
+
+/* Rodape */
+footer{
+    font-size: 1.5em;
+    margin: 5% 0% 0% -0.5%;
+    width: 100%;
+    text-align: center;
 }
 
 i{
-    color: black;
-    font-size: 200%;
+    font-size: 150%;
+    justify-content: space-between;
 }
+/* /Rodape */
