@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script src="code.js"></script>
+</head>
+
+<body>
+    <div>
+        <h3>Exercício 1</h3>
+        <label for="nome">Nome: </label>
+        <input type="text" placeholder="seu nome" id="nome">
+        <label for="idade">Idade: </label>
+        <input type="number" placeholder="sua idade" id="idade">
+        <button onclick="nomeIdade()">Enviar</button>
+    </div>
+
+    <div style="padding-top: 5%">
+        <h3>Exercício 2</h3>
+        <label for="nome">Nome: </label>
+        <input type="text" placeholder="seu nome" id="nome2">
+        <label for="idade">Idade: </label>
+        <input type="number" placeholder="sua idade" id="idade2">
+        <button onclick="nomeIdade2()">Enviar</button>
+    </div>
+
+    <div style="padding-top: 5%">
+        <h3>Exercício 3 e 4</h3>
+        <input type="text" id="n1" placeholder="1º valor">
+        <input type="text" id="n2" placeholder="2º valor">
+        <button onclick="somarNum()">Somar</button>
+    </div>
+
+    <script>
+        function nomeIdade(){
+            var nome = document.getElementById("nome");
+            var idade = document.getElementById("idade");
+
+            alert(nome.value + ' tem ' + idade.value + ' anos.');
+        }
+
+
+        function nomeIdade2(){
+            var nome = document.getElementById("nome2")
+            var idade = document.getElementById("idade2")
+
+            if (idade > 18)
+                alert(nome.value + " é maior de idade")
+            else
+                alert(nome.value + " não é maior de idade")
+        }
+
+        function exibirTexto(){
+            let num1 = parseInt(document.getElementById("num1").value)
+            let num2 = parseInt(document.getElementById("num2").value)
+
+            let button = document.getElementById("button")
+
+            let soma = num1 + num2;
+            
+            if(soma % 2 == 0){
+                button.style.backgroundColor = "blue";
+            } else {
+                button.style.backgroundColor = "green";
+            }
+        }
+    </script>
+</body>
+
+</html>
