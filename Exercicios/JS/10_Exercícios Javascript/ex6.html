@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fontePreta(){
+            let texto = document.getElementById("texto")
+            texto.style.color = 'black'
+        }
+
+        function fonteBranca(){
+            let texto = document.getElementById("texto")
+            texto.style.color = 'white'
+        }
+
+        function fundoPreto(){
+            let texto = document.getElementById("texto")
+            texto.style.backgroundColor = 'black'
+        }
+
+        function fundoBranco(){
+            let texto = document.getElementById("texto")
+            texto.style.backgroundColor = 'white'
+        }
+    </script>
+</head>
+<body>
+    <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Eget dolor morbi non arcu 
+        risus quis varius quam quisque. Sem integer vitae justo eget. Sed felis eget velit aliquet. Accumsan in nisl 
+        nisi scelerisque. Congue mauris rhoncus aenean vel elit scelerisque mauris. Quis blandit turpis cursus in hac. 
+        Ut tristique et egestas quis. Quis viverra nibh cras pulvinar mattis. Tellus orci ac auctor augue mauris augue 
+        neque gravida. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Tincidunt ornare massa eget 
+        egestas. Vitae semper quis lectus nulla at volutpat. Ipsum consequat nisl vel pretium lectus. 
+    </p>
+
+    <button onclick="fontePreta()">Fonte cor preta</button> <br><br>
+    <button onclick="fonteBranca()">Fonte cor branca</button> <br><br>
+    <button onclick="fundoPreto()">Fundo cor preta</button> <br><br>
+    <button onclick="fundoBranco()">Fundo cor branca</button> <br><br>
+</body>
+</html>

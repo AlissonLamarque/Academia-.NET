@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function ableCheckbox(){
+            let op0 = document.getElementById("op0")
+            let op1 = document.getElementById("op1")
+            let op2 = document.getElementById("op2")
+            let op3 = document.getElementById("op3")
+
+            if (op1.checked && op2.checked || op1.checked && op3.checked || op2.checked && op3.checked)
+                op0.disabled = false
+            else
+                op0.disabled = true
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>
+            <input type="checkbox" id="op1" onclick="ableCheckbox()"> Opção 1
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="op2" onclick="ableCheckbox()"> Opção 2
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="op3" onclick="ableCheckbox()"> Opção 3
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="op0" onclick="ableCheckbox()" disabled> Opção 0
+        </label>
+    </form>
+</body>
+</html>

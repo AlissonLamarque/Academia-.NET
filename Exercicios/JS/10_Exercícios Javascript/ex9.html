@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function verificarLogin(){
+            let nome = document.getElementById("nome").value
+            let senha = document.getElementById("senha").value
+            let confSenha = document.getElementById("confSenha").value
+            
+            if(nome == ""){
+                alert("Digite seu nome de usuário")
+                event.preventDefault()
+            }
+            else if(senha == "" || senha.length < 6 || senha.length > 10){
+                alert("Digite a senha corretamente")
+                event.preventDefault()
+            }
+            else if(confSenha != senha){
+                alert("As senhas não coincidem")
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="anexo01.html">
+        <label for="nome">Nome de usuário: </label>
+        <br><br>
+        <input type="text" placeholder="nome" id="nome">
+        <br><br>
+        <label for="senha">Senha: </label>
+        <br><br>
+        <input type="password" placeholder="senha" id="senha">
+        <br><br>
+        <input type="password" placeholder="confirmar senha" id="confSenha">
+        <br><br>
+        <input type="submit" onclick="verificarLogin()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function radioP(){
+            let radioPF = document.getElementById("radioPF")
+            let radioPJ = document.getElementById("radioPJ")
+
+            if (radioPF.checked)
+                radioPJ.checked = false;
+            if (radioPJ.checked)
+                radioPF.checked = false;
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="nome">Nome: </label> <br>
+        <input type="text" placeholder="seu nome"> <br><br>
+        <input type="radio" id="radioPF" onclick="radioP()">
+        <label for="pessoa">Pessoa física</label> <br>
+        <input type="radio" id="radioPJ" onclick="radioP()">
+        <label for="pessoa">Pessoa juridica</label> <br><br>
+        <label for="endereco">CPF:</label> <br>
+        <input type="text" placeholder="seu cpf"> <br><br>
+        <label for="endereco">CNPJ:</label> <br>
+        <input type="text" placeholder="seu cnpj"> <br><br>
+        <label for="dataNasc">Data de nascimento:</label> <br>
+        <input type="date"> <br><br>
+        <label for="endereco">Endereço:</label> <br>
+        <input type="text" placeholder="rua, bairro - cidade"> <br><br>
+        <label for="cep">CEP: </label> <br>
+        <input type="text" placeholder="00000-000"> <br><br>
+        <label for="tel">Telefone:</label> <br>
+        <input type="tel" placeholder="(00) 0 0000-0000"> <br><br>
+        <label for="email">Email:</label> <br>
+        <input type="email" placeholder="seuemail@email.com"> <br><br>
+        <input type="submit" onclick="">
+    </form>
+</body>
+</html>
+
+<!--
+    Pessoa fisica CHECKED - CPF ATIVO / CNPJ INATIVO / DATANASC ATIVO
+    Pessoa juridica CHECKED - CPF INATIVO / CNPJ ATIVO / DATANASC INATIVO
+    CEP só deve aceitar números
+-->
