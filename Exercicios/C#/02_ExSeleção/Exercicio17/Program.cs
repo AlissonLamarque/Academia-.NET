@@ -6,6 +6,34 @@ public class Exercicio17
 {
     public static void Main()
     {
+        double a, b, c;
+
+        Console.WriteLine("Lado A: ");
+        a = double.Parse(Console.ReadLine());
+        Console.WriteLine("Lado B: ");
+        b = double.Parse(Console.ReadLine());
+        Console.WriteLine("Lado C: ");
+        c = double.Parse(Console.ReadLine());
+
+        if (a <= b + c && b <= c + a && c <= a + b)
+        {
+            if (a == b && a == c)
+            {
+                Console.WriteLine("Equilátero");
+            }
+            else if (a == b && a != c || a == c && a != b || b == c && c != a)
+            {
+                Console.WriteLine("Isósceles");
+            }
+            else
+            {
+                Console.WriteLine("Escaleno");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Não foi possível formar um triângulo");
+        }
 
     }
 }

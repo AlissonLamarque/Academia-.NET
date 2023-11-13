@@ -26,3 +26,17 @@ C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\03_ExRepetição_p
 C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.pdb
 C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.genruntimeconfig.cache
 C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\ref\Exercicio20.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\bin\Debug\net6.0\Exercicio20.exe
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\bin\Debug\net6.0\Exercicio20.deps.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\bin\Debug\net6.0\Exercicio20.runtimeconfig.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\bin\Debug\net6.0\Exercicio20.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\bin\Debug\net6.0\Exercicio20.pdb
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.AssemblyInfoInputs.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.AssemblyInfo.cs
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.csproj.CoreCompileInputs.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\refint\Exercicio20.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.pdb
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\Exercicio20.genruntimeconfig.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\03_ExRepetição_pt2\Exercicio20\obj\Debug\net6.0\ref\Exercicio20.dll

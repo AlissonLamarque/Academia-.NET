@@ -21,17 +21,19 @@ namespace Exercicio02
             this.valor = valor;
         }
 
-        public void AdicionarCompras(RegistroDeCompras novaCompra)
+        public void AdicionarCompras()
         {
-            ListaCompras.Add(novaCompra);
+            ListaCompras.Add(this);
         }
 
         public void ListarCompras()
         {
-            foreach(RegistroDeCompras registroCompra in ListaCompras)
+            Console.WriteLine($"--- Registro de Compras ---");
+            foreach (RegistroDeCompras registroCompra in ListaCompras)
             {
-                Console.WriteLine($"{registroCompra.data} -> {registroCompra.produto} | {registroCompra.valor}");
+                Console.WriteLine($"{registroCompra.data} -> {registroCompra.produto} R${registroCompra.valor:F2}");
             }
+            Console.WriteLine("----------------------------");
         }
     }
 }

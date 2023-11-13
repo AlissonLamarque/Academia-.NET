@@ -22,17 +22,48 @@ namespace Exercicio04
             this.telefone = tel;
         }
 
-        void AdicionarContato()
+        public void armazenarContato(string nome, string email, string tel)
         {
-            _AgendaTelefonica.Add(this);
+            AgendaTelefonica contato = new AgendaTelefonica(nome, email, tel);
+            _AgendaTelefonica.Add(contato);
         }
 
-        void RemoverContato()
+        public void removerContato(string nome, string tel)
         {
-            _AgendaTelefonica.Remove(this);
+            bool cttEncontrado = false;
+            foreach (AgendaTelefonica telefone in _AgendaTelefonica)
+            {
+                if (telefone.nome == nome && telefone.telefone == tel)
+                {
+                    _AgendaTelefonica.Remove(telefone);
+                    cttEncontrado |= true;
+                    break;
+                }
+            }
+            if (!cttEncontrado)
+            {
+                Console.WriteLine("Contato não encontrado");
+            }
         }
 
-        void ListarContato()
+        public void buscarContato(string nome)
+        {
+            bool cttEncontrado = false;
+            foreach (AgendaTelefonica telefone in _AgendaTelefonica)
+            {
+                if (telefone.nome == nome)
+                {
+                    Console.WriteLine($"Nome: {telefone.nome} - Tel: {telefone.telefone} - Email: {telefone.email}");
+                    cttEncontrado |= true;
+                }
+            }
+            if (!cttEncontrado)
+            {
+                Console.WriteLine("Contato não encontrado");
+            }
+        }
+
+        public void listarContato()
         {
             foreach (AgendaTelefonica telefone in _AgendaTelefonica)
             {

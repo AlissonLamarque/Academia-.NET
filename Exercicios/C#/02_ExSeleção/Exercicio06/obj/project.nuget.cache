@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CUOKvEo7xcJvUUFyT++RaT12/VhmgLWwSmRMSoLfv0xoA2CngblFUOtSOzd7bkfTa6e4N10cIpd8RbkGnKkQ0A==",
+  "dgSpecHash": "RXOcuwEisCBzUr8Z2A3iaVIRkiJVxVA12pl6z+Ylxs+ki1iPfkLVAiz8jxqFpRWTQO4tYi8o7Jx7cPKtJPQwzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Academia ATOS\\Academia .NET Atos\\C#\\02_ExSeleção\\Exercicio06\\Exercicio06.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Exercicios\\C#\\02_ExSeleção\\Exercicio06\\Exercicio06.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
