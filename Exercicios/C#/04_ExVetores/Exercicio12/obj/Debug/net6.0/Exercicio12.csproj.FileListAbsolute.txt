@@ -12,3 +12,17 @@ C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exerc
 C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.pdb
 C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.genruntimeconfig.cache
 C:\Users\aliss\Documentos\Academia ATOS\Academia .NET Atos\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\ref\Exercicio12.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\bin\Debug\net6.0\Exercicio12.exe
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\bin\Debug\net6.0\Exercicio12.deps.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\bin\Debug\net6.0\Exercicio12.runtimeconfig.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\bin\Debug\net6.0\Exercicio12.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\bin\Debug\net6.0\Exercicio12.pdb
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.AssemblyInfoInputs.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.AssemblyInfo.cs
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.csproj.CoreCompileInputs.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\refint\Exercicio12.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.pdb
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\Exercicio12.genruntimeconfig.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Exercicios\C#\04_ExVetores\Exercicio12\obj\Debug\net6.0\ref\Exercicio12.dll
