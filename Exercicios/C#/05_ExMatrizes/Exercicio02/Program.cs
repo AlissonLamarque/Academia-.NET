@@ -26,17 +26,34 @@ public class Exercicio02
 			}
 		}
 
+        Console.WriteLine("Soma dos elementos de cada linha");
+
         for (int i = 0; i < linha; i++)
         {
+			contador = 0; somaLinha = 0;
             for (int j = 0; j < coluna; j++)
             {
-				if (contador == i + 1)
-				{
-					Console.WriteLine($"Linha {i}: {somaLinha}");
-				}
                 somaLinha += matriz[i, j];
+				contador++;
+
+				if (contador == 3)
+					Console.WriteLine($"Linha {i + 1}: {somaLinha}");
             }
-			contador++;
+        }
+
+        Console.WriteLine("Soma dos elementos de cada coluna");
+
+        for (int i = 0; i < linha; i++)
+        {
+            contador = 0; somaColuna = 0;
+            for (int j = 0; j < coluna; j++)
+            {
+                somaColuna += matriz[j, i];
+                contador++;
+
+                if (contador == 3)
+                    Console.WriteLine($"Coluna {i + 1}: {somaColuna}");
+            }
         }
     }
 }
