@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "YaM7xVtfFSAQqwghKsrYmWJ3dBfivJkh7NJovHOjqvIUE1KxHmdbyiiDlTKGZ8nWDIOIRn+c9WcM31b7GIOrPg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Desafios\\12_AmigoSecretoWinForms\\12_AmigoSecretoWinForms\\12_AmigoSecretoWinForms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
