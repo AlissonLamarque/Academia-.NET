@@ -71,7 +71,7 @@ namespace _12_AmigoSecretoWinForms
 
                     listView_AmigoSecreto.Clear();
 
-                    for (int i = 0; i < Math.Max(lista.Count, listaSecreta.Count); i++)
+                    /*for (int i = 0; i < Math.Max(lista.Count, listaSecreta.Count); i++)
                     {
                         string[] items = new string[4];
 
@@ -86,6 +86,13 @@ namespace _12_AmigoSecretoWinForms
                             items[2] = listaSecreta[i].Nome;
                             items[3] = listaSecreta[i].Email;
                         }
+
+                        listView_AmigoSecreto.Items.Add(new ListViewItem(items));
+                    }*/
+
+                    foreach (Pessoa p in listaSecreta)
+                    {
+                        string[] items = { p.Nome, p.Email };
 
                         listView_AmigoSecreto.Items.Add(new ListViewItem(items));
                     }

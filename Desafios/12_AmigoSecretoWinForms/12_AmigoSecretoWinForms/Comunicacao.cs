@@ -62,7 +62,7 @@ namespace _12_AmigoSecretoWinForms
 
                 for (int i = 0; i < listaTmp.Count; i++)
                 {
-                    if (lista[i] == listaTmp[i])
+                    if (lista[i].Email == listaTmp[i].Email)
                     {
                         deuCerto = false;
                         listaTmp.Clear();
