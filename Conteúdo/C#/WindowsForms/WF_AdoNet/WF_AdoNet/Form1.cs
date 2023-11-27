@@ -22,32 +22,42 @@ namespace WF_AdoNet
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Banco bd = new Banco();
-
             DataTable dt = new DataTable();
+            Pessoa p = new Pessoa();
 
-            dt = bd.executaConsulta("select * from pessoas");
+            if (String.IsNullOrEmpty(textBox1.Text))
+            {
+                dt = p.buscaPessoas();
+            }
+            else
+            {
+                p.id = int.Parse(textBox1.Text);
+                dt = p.buscaPessoasById();
+            }
+
 
             dataGridView1.DataSource = dt;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DataTable dt = new DataTable();
             Pessoa p = new Pessoa();
 
-            p.nome = textBox2.Text;
-            p.idade = int.Parse(textBox3.Text);
-
-            if (p.gravar())
+            if (String.IsNullOrEmpty(textBox1.Text))
             {
-                MessageBox.Show("Cadastrado com sucesso!");
-
-                button2_Click(null, null);
+                dt = p.buscaPessoas();
             }
             else
             {
-                MessageBox.Show("Falha ao cadastrar");
+                p.id = int.Parse(textBox1.Text);
+                //p = p.buscaPessoaByIdDR();
+                //MessageBox.Show(p.nome);
+                dt = p.buscaPessoasById();
             }
+
+
+            dataGridView1.DataSource = dt;
         }
     }
 }
