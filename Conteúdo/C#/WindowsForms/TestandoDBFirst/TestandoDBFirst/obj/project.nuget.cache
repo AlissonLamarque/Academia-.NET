@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fSS59s8auNMAqolYjFrW15x0U65L7ehsEU49pcrvnuz8MYxLhR5AgMNmjbKSaqSxPEc9rqUxBhcP48FRtvwNzw==",
+  "dgSpecHash": "BHcOtIIAB0WaFJaFFf3QWJq9ahfWGwAO7V82WT8+jOrqX+X66S8AAaAgTAfdYY9eJE2flDIxw/FcdKNewQAEbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\TestandoDBFirst\\TestandoDBFirst\\TestandoDBFirst.csproj",
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\C#\\WindowsForms\\TestandoDBFirst\\TestandoDBFirst\\TestandoDBFirst.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aliss\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

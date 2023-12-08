@@ -43,7 +43,7 @@ namespace WF_MiniERP
             {
                 MessageBox.Show("Nome inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (string.IsNullOrEmpty(email) || Operacoes.EmailIsValid(email))
+            else if (string.IsNullOrEmpty(email) || !Operacoes.EmailIsValid(email))
             {
                 MessageBox.Show("E-mail inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

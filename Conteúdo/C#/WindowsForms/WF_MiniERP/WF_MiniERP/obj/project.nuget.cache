@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iuiHU6+MlEMfJUwrz95z8TXE41VQglhBmjCSkwf5vM8kitSS24Tv5U0SvCtOiXwS5VY7W92mkGYGdmzXD/XQ2w==",
+  "dgSpecHash": "m3UGa4HasUyxT/pR2RG00MTAF6D9GLbuCo2YaOBvy+hSUNpqvcrByLILnko52Hsb71Fxq1aqfNqQ7ZgRpHo9tw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\C#\\WindowsForms\\WF_MiniERP\\WF_MiniERP\\WF_MiniERP.csproj",
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\C#\\WindowsForms\\WF_MiniERP\\WF_MiniERP\\WF_MiniERPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aliss\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

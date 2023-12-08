@@ -30,6 +30,8 @@
         {
             label_Titulo = new Label();
             listView_Compra = new ListView();
+            columnHeader_Produto = new ColumnHeader();
+            columnHeader_Cliente = new ColumnHeader();
             numericUpDown_Produto = new NumericUpDown();
             numericUpDown_Cliente = new NumericUpDown();
             label_Produto = new Label();
@@ -52,11 +54,23 @@
             // 
             // listView_Compra
             // 
+            listView_Compra.Columns.AddRange(new ColumnHeader[] { columnHeader_Produto, columnHeader_Cliente });
             listView_Compra.Location = new Point(12, 75);
             listView_Compra.Name = "listView_Compra";
             listView_Compra.Size = new Size(181, 199);
             listView_Compra.TabIndex = 1;
             listView_Compra.UseCompatibleStateImageBehavior = false;
+            listView_Compra.View = View.Details;
+            // 
+            // columnHeader_Produto
+            // 
+            columnHeader_Produto.Text = "Produtos";
+            columnHeader_Produto.Width = 88;
+            // 
+            // columnHeader_Cliente
+            // 
+            columnHeader_Cliente.Text = "Clientes";
+            columnHeader_Cliente.Width = 88;
             // 
             // numericUpDown_Produto
             // 
@@ -101,6 +115,7 @@
             button_RealizarCompra.TabIndex = 8;
             button_RealizarCompra.Text = "REALIZAR";
             button_RealizarCompra.UseVisualStyleBackColor = true;
+            button_RealizarCompra.Click += button_RealizarCompra_Click;
             // 
             // button_Pronto
             // 
@@ -144,5 +159,7 @@
         private Label label_Cliente;
         private Button button_RealizarCompra;
         private Button button_Pronto;
+        private ColumnHeader columnHeader_Produto;
+        private ColumnHeader columnHeader_Cliente;
     }
 }

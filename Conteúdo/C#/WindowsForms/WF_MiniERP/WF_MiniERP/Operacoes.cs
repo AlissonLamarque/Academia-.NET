@@ -20,7 +20,7 @@ namespace WF_MiniERP
             return Regex.IsMatch(email, pattern);
         }
 
-        public static bool CadastrarProduto(string nome, string desc, decimal valor, int fornecedor)
+        public static bool CadastrarProduto(string nome, string desc, decimal valor, decimal fornecedor)
         {
             using (var contexto = new MiniErpContext())
             {
@@ -28,7 +28,7 @@ namespace WF_MiniERP
                 p.Nome = nome;
                 p.Descricao = desc;
                 p.Valor = valor;
-                p.FkFornecedor = fornecedor;
+                p.FkFornecedor = (int?)fornecedor;
                 contexto.Produtos.Add(p);
                 contexto.SaveChanges();
                 return true;
@@ -58,6 +58,24 @@ namespace WF_MiniERP
                 contexto.Fornecedores.Add(f);
                 contexto.SaveChanges();
                 return true;
+            }
+        }
+
+        public static bool gerarNota(decimal produto, decimal cliente)
+        {
+            using (var contexto = new MiniErpContext())
+            {
+                Notum n = new Notum();
+                
+            }
+            return true;
+        }
+
+        public static void listarNota()
+        {
+            using (var contexto = new MiniErpContext())
+            {
+                var notas = contexto.Nota.ToList();
             }
         }
     }

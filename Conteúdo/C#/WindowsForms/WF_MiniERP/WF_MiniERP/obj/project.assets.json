@@ -2974,9 +2974,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\C#\\WindowsForms\\WF_MiniERP\\WF_MiniERP\\WF_MiniERP.csproj",
-      "projectName": "WF_MiniERP",
-      "projectPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\C#\\WindowsForms\\WF_MiniERP\\WF_MiniERP\\WF_MiniERP.csproj",
+      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\C#\\WindowsForms\\WF_MiniERP\\WF_MiniERP\\WF_MiniERPF.csproj",
+      "projectName": "WF_MiniERPF",
+      "projectPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\C#\\WindowsForms\\WF_MiniERP\\WF_MiniERP\\WF_MiniERPF.csproj",
       "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\C#\\WindowsForms\\WF_MiniERP\\WF_MiniERP\\obj\\",
       "projectStyle": "PackageReference",

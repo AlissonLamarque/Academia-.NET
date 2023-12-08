@@ -31,16 +31,18 @@ create table cliente
 create table nota
 (
 	id integer not null primary key identity,
-	fk_fornecedor integer,
+	fk_produto integer,
 	fk_cliente integer
 
-	foreign key(fk_fornecedor) references fornecedor(id),
+	foreign key(fk_produto) references produto(id),
 	foreign key(fk_cliente) references cliente(id)
 )
 
 select * from fornecedor
 select * from cliente
 select * from produto
+
+drop table nota
 
 -- Ferramentas -> Pacote Nugget -> Console
 

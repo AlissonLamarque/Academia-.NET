@@ -33,7 +33,7 @@ namespace WF_MiniERP
             Form_Compra formCompra = new Form_Compra();
             formCompra.Show();
         }
-        
+
         private void button_Sair_Click(object sender, EventArgs e)
         {
             Application.Exit();
