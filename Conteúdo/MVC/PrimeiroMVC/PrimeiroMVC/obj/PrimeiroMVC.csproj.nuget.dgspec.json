@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PrimeiroMVC\\PrimeiroMVC\\PrimeiroMVC.csproj": {}
+    "C:\\Users\\aliss\\OneDrive\\Área de Trabalho\\GitHub\\Atos\\Academia .NET\\Conteúdo\\MVC\\PrimeiroMVC\\PrimeiroMVC\\PrimeiroMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PrimeiroMVC\\PrimeiroMVC\\PrimeiroMVC.csproj": {
+    "C:\\Users\\aliss\\OneDrive\\Área de Trabalho\\GitHub\\Atos\\Academia .NET\\Conteúdo\\MVC\\PrimeiroMVC\\PrimeiroMVC\\PrimeiroMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PrimeiroMVC\\PrimeiroMVC\\PrimeiroMVC.csproj",
+        "projectUniqueName": "C:\\Users\\aliss\\OneDrive\\Área de Trabalho\\GitHub\\Atos\\Academia .NET\\Conteúdo\\MVC\\PrimeiroMVC\\PrimeiroMVC\\PrimeiroMVC.csproj",
         "projectName": "PrimeiroMVC",
-        "projectPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PrimeiroMVC\\PrimeiroMVC\\PrimeiroMVC.csproj",
+        "projectPath": "C:\\Users\\aliss\\OneDrive\\Área de Trabalho\\GitHub\\Atos\\Academia .NET\\Conteúdo\\MVC\\PrimeiroMVC\\PrimeiroMVC\\PrimeiroMVC.csproj",
         "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PrimeiroMVC\\PrimeiroMVC\\obj\\",
+        "outputPath": "C:\\Users\\aliss\\OneDrive\\Área de Trabalho\\GitHub\\Atos\\Academia .NET\\Conteúdo\\MVC\\PrimeiroMVC\\PrimeiroMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,30 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,24 +79,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -81,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

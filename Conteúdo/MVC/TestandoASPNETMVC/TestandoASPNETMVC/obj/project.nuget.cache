@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zenojHCp6fXJ7kQgOd6jF+G2go2sLSPtU6sAkel4CjaCS32q5512RO2UhwkzvKlg9+EszBp5XJNPeIuM4X04OA==",
+  "dgSpecHash": "AN7Qw3Eq94zIpz/d8V1D8x044/h5jL5CrxNVfsiCTOITJ7d69U/GFDkaIUGR9NCephhUzaddLxnXrwCKU/TAxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\TestandoASPNETMVC\\TestandoASPNETMVC\\TestandoASPNETMVC.csproj",
+  "projectFilePath": "C:\\Users\\aliss\\OneDrive\\Área de Trabalho\\GitHub\\Atos\\Academia .NET\\Conteúdo\\MVC\\TestandoASPNETMVC\\TestandoASPNETMVC\\TestandoASPNETMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aliss\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -238,11 +238,7 @@
     "C:\\Users\\aliss\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+    "C:\\Users\\aliss\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
