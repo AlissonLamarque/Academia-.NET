@@ -86,3 +86,14 @@ C:\Users\aliss\OneDrive\Área de Trabalho\GitHub\Atos\Academia .NET\Conteúdo\MV
 C:\Users\aliss\OneDrive\Área de Trabalho\GitHub\Atos\Academia .NET\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\aliss\OneDrive\Área de Trabalho\GitHub\Atos\Academia .NET\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.csproj.AssemblyReference.cache
 C:\Users\aliss\OneDrive\Área de Trabalho\GitHub\Atos\Academia .NET\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.csproj.CopyComplete
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.csproj.AssemblyReference.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.AssemblyInfoInputs.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.AssemblyInfo.cs
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.csproj.CoreCompileInputs.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.RazorAssemblyInfo.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.RazorAssemblyInfo.cs
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\refint\PrimeiroMVC.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\MVC\PrimeiroMVC\PrimeiroMVC\obj\Debug\net6.0\PrimeiroMVC.pdb
