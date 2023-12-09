@@ -20,7 +20,7 @@ namespace _12_AmigoSecretoWinForms
             {
                 lista.Add(pessoa);
                 lista.Sort((a, b) => a.Nome.CompareTo(b.Nome));
-                //Persistencia.gravarSimples(pessoa, "amigos.csv");
+                Persistencia.gravarSimples(pessoa, "amigos.csv");
             }
         }
 
@@ -71,7 +71,7 @@ namespace _12_AmigoSecretoWinForms
                 }
             } while (!deuCerto);
 
-            //Persistencia.gerarArquivoAmigoSecreto(lista, listaTmp);
+            Persistencia.gerarArquivoAmigoSecreto(lista, listaTmp);
             return listaTmp;
         }
     }

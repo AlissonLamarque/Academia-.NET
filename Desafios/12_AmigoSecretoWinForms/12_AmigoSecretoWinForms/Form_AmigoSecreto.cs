@@ -18,8 +18,6 @@ namespace _12_AmigoSecretoWinForms
             InitializeComponent();
         }
 
-        bool gerouAmigoSecreto = false;
-
         private void button_SairAmigoSecreto_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -36,23 +34,32 @@ namespace _12_AmigoSecretoWinForms
 
                 if (lista.Count <= 2)
                 {
-                    MessageBox.Show($"Não é possível gerar Amigos Secretos com apenas {lista.Count} amigos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Não é possível gerar Amigos Secretos com {lista.Count} amigos!", "Erro", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
                     DialogResult resposta = DialogResult.Yes;
+                    bool gerarValido = true;
 
-                    if (lista.Count % 2 != 0)
+                    if (listaSecreta.Count != 0)
                     {
-                        resposta = MessageBox.Show("Tem certeza que deseja gerar Amigos Secretos\nAlguém vai ter 2 Amigos Secretos!", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                        resposta = MessageBox.Show("Deseja gerar novamente a lista de Amigos Secretos?", "Gerar Amigos Secretos novamente", 
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resposta == DialogResult.No) gerarValido = false;
+
                     }
 
-                    if (resposta == DialogResult.Yes)
+                    if (gerarValido)
                     {
-                        MessageBox.Show("Gerando arquivo com Amigos Secretos", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        form1.listaAmigoSecreto = Comunicacao.gerarAmigoSecreto(lista);
-                        listaSecreta = form1.listaAmigoSecreto;
-                        gerouAmigoSecreto = true;
+                            MessageBox.Show("Gerando arquivo com Amigos Secretos", "", 
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                            form1.listaAmigoSecreto = Comunicacao.gerarAmigoSecreto(lista);
+                            listaSecreta = form1.listaAmigoSecreto;
+
+                            if (form1.listaAmigoSecreto != null) MessageBox.Show("Lista de Amigos Secretos gerada!", "Sucesso", 
+                                MessageBoxButtons.OK);
                     }
                 }
             }
@@ -60,41 +67,40 @@ namespace _12_AmigoSecretoWinForms
 
         private void button_ListarAmigoSecreto_Click(object sender, EventArgs e)
         {
-            if (gerouAmigoSecreto)
+            Form1 form1 = Application.OpenForms["Form1"] as Form1;
+            DialogResult resposta;
+
+            if (form1.listaAmigoSecreto.Count() != 0)
             {
-                Form1 form1 = Application.OpenForms["Form1"] as Form1;
+                resposta = MessageBox.Show("Deseja revelar os Amigos Secretos?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                if (form1 != null)
-                {
-                    List<Pessoa> lista = form1.listaAmigo;
-                    List<Pessoa> listaSecreta = form1.listaAmigoSecreto;
-
-                    listView_AmigoSecreto.Clear();
-
-                    /*for (int i = 0; i < Math.Max(lista.Count, listaSecreta.Count); i++)
+                if (resposta == DialogResult.Yes)
+                { 
+                    if (form1 != null)
                     {
-                        string[] items = new string[4];
+                        List<Pessoa> lista = form1.listaAmigo;
+                        List<Pessoa> listaSecreta = form1.listaAmigoSecreto;
 
-                        if (i < lista.Count)
+                        listView_AmigoSecreto.Items.Clear();
+
+                        for (int i = 0; i < Math.Max(lista.Count, listaSecreta.Count); i++)
                         {
-                            items[0] = lista[i].Nome;
-                            items[1] = lista[i].Email;
+                            string[] items = new string[4];
+
+                            if (i < lista.Count)
+                            {
+                                items[0] = lista[i].Nome;
+                                items[1] = lista[i].Email;
+                            }
+
+                            if (i < listaSecreta.Count)
+                            {
+                                items[2] = listaSecreta[i].Nome;
+                                items[3] = listaSecreta[i].Email;
+                            }
+
+                            listView_AmigoSecreto.Items.Add(new ListViewItem(items));
                         }
-
-                        if (i < listaSecreta.Count)
-                        {
-                            items[2] = listaSecreta[i].Nome;
-                            items[3] = listaSecreta[i].Email;
-                        }
-
-                        listView_AmigoSecreto.Items.Add(new ListViewItem(items));
-                    }*/
-
-                    foreach (Pessoa p in listaSecreta)
-                    {
-                        string[] items = { p.Nome, p.Email };
-
-                        listView_AmigoSecreto.Items.Add(new ListViewItem(items));
                     }
                 }
             }

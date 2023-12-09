@@ -74,24 +74,25 @@ namespace _12_AmigoSecretoWinForms
 
         private void button_LimparLista_Click(object sender, EventArgs e)
         {
-            DialogResult resultado = MessageBox.Show("Tem certeza que deseja apagar todos cadastros", "Limpar Lista de Amigos", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Form1 form1 = Application.OpenForms["Form1"] as Form1;
 
-            if (resultado == DialogResult.Yes)
+            if (form1 != null)
             {
-                Form1 form1 = Application.OpenForms["Form1"] as Form1;
-
-                if (form1 != null)
+                List<Pessoa> lista = form1.listaAmigo;
+                if (lista.Count != 0)
                 {
-                    List<Pessoa> lista = form1.listaAmigo;
-                    if (lista.Count != 0)
+                    DialogResult resultado = MessageBox.Show("Tem certeza que deseja apagar todos cadastros?", "Limpar Lista de Amigos", 
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (resultado == DialogResult.Yes)
                     {
                         lista.Clear();
-                        listView_Amigos.Clear();
+                        listView_Amigos.Items.Clear();
                     }
-                    else
-                    {
-                        MessageBox.Show("Sem cadastros para limpar", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("Sem cadastros para limpar", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
