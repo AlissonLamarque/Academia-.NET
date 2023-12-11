@@ -36,7 +36,7 @@ namespace _13_MiniERPcomEntity.Forms
 
         private void button_Enviar_Click(object sender, EventArgs e)
         {
-            string nome = textBox_Nome.Text;
+            string nome = textBox_Nome.Text.ToUpper();
             string cnpj = textBox_Cnpj.Text;
 
             if (string.IsNullOrEmpty(nome))
@@ -49,19 +49,25 @@ namespace _13_MiniERPcomEntity.Forms
             }
             else
             {
-                try
+                if (!Operacoes.VerificaDuplicidade(cnpj, 3))
                 {
-                    Operacoes.CadastrarFornecedor(nome, cnpj);
-                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais fornecedores?", "Sucesso",
-                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (resposta == DialogResult.No)
-                        this.Close();
+                    try
+                    {
+                        Operacoes.CadastrarFornecedor(nome, cnpj);
+                        DialogResult resposta = MessageBox.Show("Deseja cadastrar mais fornecedores?", "Sucesso",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resposta == DialogResult.No)
+                            this.Close();
+                    }
+                    catch (Exception) 
+                    {
+                        MessageBox.Show("Erro durante o cadastro de fornecedor", "Erro",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception) 
-                {
-                    MessageBox.Show("Erro durante o cadastro de fornecedor", "Erro",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else
+                    MessageBox.Show("Fornecedor já cadastrado", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

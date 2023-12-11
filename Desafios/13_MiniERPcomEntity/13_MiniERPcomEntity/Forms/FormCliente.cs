@@ -35,8 +35,8 @@ namespace _13_MiniERPcomEntity.Forms
 
         private void button_Enviar_Click(object sender, EventArgs e)
         {
-            string nome = textBox_Nome.Text;
-            string email = textBox_Email.Text;
+            string nome = textBox_Nome.Text.ToUpper();
+            string email = textBox_Email.Text.ToLower();
 
             if (string.IsNullOrEmpty(nome))
             {
@@ -48,19 +48,25 @@ namespace _13_MiniERPcomEntity.Forms
             }
             else
             {
-                try
+                if (!Operacoes.VerificaDuplicidade(email, 2))
                 {
-                    Operacoes.CadastrarCliente(nome, email);
-                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais clientes?", "Sucesso",
-                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (resposta == DialogResult.No)
-                        this.Close();
+                    try
+                    {
+                        Operacoes.CadastrarCliente(nome, email);
+                        DialogResult resposta = MessageBox.Show("Deseja cadastrar mais clientes?", "Sucesso",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resposta == DialogResult.No)
+                            this.Close();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Erro durante o cadastro de cliente", "Erro",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception) 
-                {
-                    MessageBox.Show("Erro durante o cadastro de cliente", "Erro",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else
+                    MessageBox.Show("Cliente já cadastrado", "Erro", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

@@ -78,3 +78,5 @@ C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Desafios\13_Mi
 C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Desafios\13_MiniERPcomEntity\13_MiniERPcomEntity\obj\Debug\net6.0-windows\13_MiniERPcomEntity.csproj.CopyComplete
 C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Desafios\13_MiniERPcomEntity\13_MiniERPcomEntity\obj\Debug\net6.0-windows\_13_MiniERPcomEntity.Forms.FormListaFornecedor.resources
 C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Desafios\13_MiniERPcomEntity\13_MiniERPcomEntity\obj\Debug\net6.0-windows\_13_MiniERPcomEntity.Forms.FormListaNotas.resources
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Desafios\13_MiniERPcomEntity\13_MiniERPcomEntity\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Desafios\13_MiniERPcomEntity\13_MiniERPcomEntity\bin\Debug\net6.0-windows\itextsharp.dll

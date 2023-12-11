@@ -50,8 +50,8 @@ namespace _13_MiniERPcomEntity.Forms
 
         private void button_Enviar_Click(object sender, EventArgs e)
         {
-            string nome = textBox_Nome.Text;
-            string desc = textBox_Desc.Text;
+            string nome = textBox_Nome.Text.ToUpper();
+            string desc = textBox_Desc.Text.ToLower();
             string valortmp = textBox_Valor.Text;
             decimal valor = 0;
             decimal fornecedor = numericUpDown_Fornecedor.Value;
@@ -75,20 +75,26 @@ namespace _13_MiniERPcomEntity.Forms
             }
             else
             {
-                try
+                if (!Operacoes.VerificaDuplicidade(nome, 1)) 
                 {
-                    valor = decimal.Parse(valortmp);
-                    Operacoes.CadastrarProduto(nome, desc, valor, fornecedor);
-                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais produtos?", "Sucesso",
-                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (resposta == DialogResult.No)
-                        this.Close();
+                    try
+                    {
+                        valor = decimal.Parse(valortmp);
+                        Operacoes.CadastrarProduto(nome, desc, valor, fornecedor);
+                        DialogResult resposta = MessageBox.Show("Deseja cadastrar mais produtos?", "Sucesso",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (resposta == DialogResult.No)
+                            this.Close();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Erro no cadastro de produto", "Erro",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("Erro no cadastro de produto", "Erro",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                else
+                    MessageBox.Show("Produto já cadastrado", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

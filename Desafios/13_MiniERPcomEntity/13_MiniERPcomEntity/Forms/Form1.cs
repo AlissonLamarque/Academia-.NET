@@ -7,7 +7,7 @@ namespace _13_MiniERPcomEntity
         public Form1()
         {
             InitializeComponent();
-            Operacoes.ListarBd(listView_Lista);
+            Operacoes.ListarInicial(listView_Lista);
         }
 
         private void button_Produto_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace _13_MiniERPcomEntity
 
         private void button_Listar_Click(object sender, EventArgs e)
         {
-            Operacoes.ListarBd(listView_Lista);
+            Operacoes.ListarInicial(listView_Lista);
         }
     }
 }
