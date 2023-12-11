@@ -191,45 +191,5 @@ namespace _13_MiniERPcomEntity
                 }
             }
         }
-
-        /*
-        private void GerarPdf(object sender, EventArgs e)
-        {
-            using (var contexto = new MiniErpContext())
-            {
-                try
-                {
-                    var notas = contexto.Nota.ToList();
-                    var produtos = contexto.Produtos.ToList();
-                    var clientes = contexto.Clientes.ToList();
-
-                    string pdfCaminho = "C:/Users/aliss/Documentos/Github/Academia ATOS/Academia .NET Atos";
-                    using (PdfWriter writer = new PdfWriter(pdfCaminho))
-                    {
-                        using (PdfDocument pdf = new PdfDocument(writer))
-                        {
-                            Document document = new Document(pdf);
-
-                            document.Add(new Paragraph("ID | Produto | Cliente"));
-
-                            for (int i; i < notas.Count(); i++)
-                            {
-                                int idNota = notas[i].Id;
-                                string nomeProduto = produtos[i].Nome; 
-                                string nomeCliente = clientes[i].Nome;
-
-                                document.Add(new Paragraph($"{idNota} | {nomeProduto} | {nomeCliente}"));
-                            }
-                        }
-                    }
-                    MessageBox.Show("PDF gerado com sucesso!");
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Erro ao gerar PDF");
-                }
-            }
-        }
-        */
     }
 }

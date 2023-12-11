@@ -30,6 +30,7 @@
         {
             label_Titulo = new Label();
             groupBox_Cadastro = new GroupBox();
+            button_Notas = new Button();
             groupBox2 = new GroupBox();
             button_Produto = new Button();
             button_Compra = new Button();
@@ -41,7 +42,6 @@
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             groupBox_Lista = new GroupBox();
-            button_Notas = new Button();
             button_Listar = new Button();
             groupBox_Cadastro.SuspendLayout();
             groupBox_Lista.SuspendLayout();
@@ -71,7 +71,18 @@
             groupBox_Cadastro.Size = new Size(235, 336);
             groupBox_Cadastro.TabIndex = 1;
             groupBox_Cadastro.TabStop = false;
-            groupBox_Cadastro.Text = "ÁREA DE CADASTRO";
+            groupBox_Cadastro.Text = "MENU";
+            // 
+            // button_Notas
+            // 
+            button_Notas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button_Notas.Location = new Point(53, 265);
+            button_Notas.Name = "button_Notas";
+            button_Notas.Size = new Size(126, 58);
+            button_Notas.TabIndex = 7;
+            button_Notas.Text = "VISUALIZAR NOTAS";
+            button_Notas.UseVisualStyleBackColor = true;
+            button_Notas.Click += button_Notas_Click;
             // 
             // groupBox2
             // 
@@ -177,27 +188,16 @@
             groupBox_Lista.Size = new Size(487, 336);
             groupBox_Lista.TabIndex = 6;
             groupBox_Lista.TabStop = false;
-            groupBox_Lista.Text = "LISTA";
-            // 
-            // button_Notas
-            // 
-            button_Notas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button_Notas.Location = new Point(53, 265);
-            button_Notas.Name = "button_Notas";
-            button_Notas.Size = new Size(126, 58);
-            button_Notas.TabIndex = 7;
-            button_Notas.Text = "VISUALIZAR NOTAS";
-            button_Notas.UseVisualStyleBackColor = true;
-            button_Notas.Click += button_Notas_Click;
+            groupBox_Lista.Text = "LISTAGEM";
             // 
             // button_Listar
             // 
-            button_Listar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button_Listar.Location = new Point(450, 299);
+            button_Listar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button_Listar.Location = new Point(395, 308);
             button_Listar.Name = "button_Listar";
-            button_Listar.Size = new Size(34, 34);
+            button_Listar.Size = new Size(89, 25);
             button_Listar.TabIndex = 7;
-            button_Listar.Text = "...";
+            button_Listar.Text = "ATUALIZAR";
             button_Listar.TextAlign = ContentAlignment.TopCenter;
             button_Listar.UseVisualStyleBackColor = true;
             button_Listar.Click += button_Listar_Click;
