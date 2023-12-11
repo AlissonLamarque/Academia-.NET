@@ -4071,11 +4071,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\AulaAPI\\AulaAPI\\AulaAPI.csproj",
+      "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\API\\AulaAPI\\AulaAPI\\AulaAPI.csproj",
       "projectName": "AulaAPI",
-      "projectPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\AulaAPI\\AulaAPI\\AulaAPI.csproj",
+      "projectPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\API\\AulaAPI\\AulaAPI\\AulaAPI.csproj",
       "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\AulaAPI\\AulaAPI\\obj\\",
+      "outputPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\API\\AulaAPI\\AulaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

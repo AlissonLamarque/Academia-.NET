@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HzS1ZjuaMRvaoq29AN0MA6ECzD0oN152MT4IL0yO0P6METnFXbeAHwSfcYSewQr+QAE6IoYiQv7lAUnkqjb74w==",
+  "dgSpecHash": "NLAd4aQagpM2a9L64/9m8h3y0370GNP/3EHQY+C+c887y4986o2zLowk4o8khQL9iqQMFq6MfsevKqSyx0Of4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\AulaAPI\\AulaAPI\\AulaAPI.csproj",
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\API\\AulaAPI\\AulaAPI\\AulaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aliss\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
