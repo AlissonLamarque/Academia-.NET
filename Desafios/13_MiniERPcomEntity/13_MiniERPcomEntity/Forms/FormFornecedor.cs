@@ -27,7 +27,8 @@ namespace _13_MiniERPcomEntity.Forms
 
         private void textBox_Cnpj_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.' || e.KeyChar == '\r')
+            // Aceita apenas números, '.' e '/'
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != '/' || e.KeyChar == '\r')
             {
                 e.Handled = true;
             }
@@ -42,21 +43,24 @@ namespace _13_MiniERPcomEntity.Forms
             {
                 MessageBox.Show("Nome inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (string.IsNullOrEmpty(cnpj) || Operacoes.EmailIsValid(cnpj))
+            else if (string.IsNullOrEmpty(cnpj) || cnpj.Length < 14)
             {
                 MessageBox.Show("CNPJ inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                if (Operacoes.CadastrarFornecedor(nome, cnpj))
+                try
                 {
-                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais fornecedores?", "Sucesso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    Operacoes.CadastrarFornecedor(nome, cnpj);
+                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais fornecedores?", "Sucesso",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (resposta == DialogResult.No)
                         this.Close();
                 }
-                else
+                catch (Exception) 
                 {
-                    MessageBox.Show("Erro");
+                    MessageBox.Show("Erro durante o cadastro de fornecedor", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

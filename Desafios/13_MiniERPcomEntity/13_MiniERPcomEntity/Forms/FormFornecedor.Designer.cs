@@ -69,6 +69,7 @@
             // textBox_Nome
             // 
             textBox_Nome.Location = new Point(81, 111);
+            textBox_Nome.MaxLength = 50;
             textBox_Nome.Name = "textBox_Nome";
             textBox_Nome.PlaceholderText = "Digite o nome da empresa";
             textBox_Nome.Size = new Size(178, 23);
@@ -78,6 +79,7 @@
             // textBox_Cnpj
             // 
             textBox_Cnpj.Location = new Point(81, 196);
+            textBox_Cnpj.MaxLength = 14;
             textBox_Cnpj.Name = "textBox_Cnpj";
             textBox_Cnpj.PlaceholderText = "Digite o cnpj de sua empresa";
             textBox_Cnpj.Size = new Size(178, 23);

@@ -16,7 +16,7 @@ namespace _13_MiniERPcomEntity.Forms
         public FormCompra()
         {
             InitializeComponent();
-            listarProdutoCliente();
+            Operacoes.ListarProdutoCliente(listView_Compra);
         }
 
         private void button_Pronto_Click(object sender, EventArgs e)
@@ -35,36 +35,20 @@ namespace _13_MiniERPcomEntity.Forms
             }
             else
             {
-                MessageBox.Show("Sucesso");
-            }
-        }
-
-        private void listarProdutoCliente()
-        {
-            listView_Compra.Items.Clear();
-            using (var contexto = new MiniErpContext())
-            {
-                var produtos = contexto.Produtos.ToList();
-                var clientes = contexto.Clientes.ToList();
-
-                int menorLista = Math.Min(produtos.Count, clientes.Count);
-
-                for (int i = 0; i < menorLista; i++)
+                try
                 {
-                    string[] item = { produtos[i].Nome, clientes[i].Nome };
-                    listView_Compra.Items.Add(new ListViewItem(item));
+                    Operacoes.RealizarCompra(idProduto, idCliente);
+                    DialogResult resposta = MessageBox.Show("Deseja realizar mais compras?", "Sucesso",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (resposta == DialogResult.No)
+                        this.Close();
+                    else
+                        Operacoes.ListarProdutoCliente(listView_Compra);
                 }
-
-                for (int i = menorLista; i < produtos.Count; i++)
+                catch (Exception)
                 {
-                    string[] item = { produtos[i].Nome };
-                    listView_Compra.Items.Add(new ListViewItem(item));
-                }
-
-                for (int i = menorLista; i < clientes.Count; i++)
-                {
-                    string[] item = { clientes[i].Nome };
-                    listView_Compra.Items.Add(new ListViewItem(item));
+                    MessageBox.Show("Erro na realização de compra", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

@@ -69,6 +69,7 @@
             // textBox_Nome
             // 
             textBox_Nome.Location = new Point(81, 111);
+            textBox_Nome.MaxLength = 50;
             textBox_Nome.Name = "textBox_Nome";
             textBox_Nome.PlaceholderText = "Digite seu nome";
             textBox_Nome.Size = new Size(178, 23);
@@ -78,6 +79,7 @@
             // textBox_Email
             // 
             textBox_Email.Location = new Point(81, 196);
+            textBox_Email.MaxLength = 50;
             textBox_Email.Name = "textBox_Email";
             textBox_Email.PlaceholderText = "Digite um email válido";
             textBox_Email.Size = new Size(178, 23);

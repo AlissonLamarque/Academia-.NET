@@ -62,18 +62,105 @@ namespace _13_MiniERPcomEntity
             }
         }
 
-        public static bool gerarNota(decimal produto, decimal cliente)
-        {
-            return true;
-        }
-
-        public static void listarNota()
+        public static bool RealizarCompra(decimal produto, decimal cliente)
         {
             using (var contexto = new MiniErpContext())
             {
-                var notas = contexto.Nota.ToList();
+                Notum n = new Notum();
+                n.FkCliente = (int?) cliente;
+                n.FkProduto = (int?) produto;
+                contexto.Nota.Add(n);
+                contexto.SaveChanges();
+                return true;
             }
         }
-        
+
+        public static void ListarBd(ListView lista)
+        {
+            lista.Items.Clear();
+
+            using (var contexto = new MiniErpContext())
+            {
+                var produtos = contexto.Produtos.ToList();
+                var clientes = contexto.Clientes.ToList();
+                var fornecedores = contexto.Fornecedors.ToList();
+
+                int maiorLista = Math.Max(produtos.Count, Math.Max(clientes.Count, fornecedores.Count));
+
+                for (int i = 0; i < maiorLista; i++)
+                {
+                    string[] item = 
+                    {
+                        i < produtos.Count ? produtos[i].Nome : "",
+                        i < clientes.Count ? clientes[i].Nome : "",
+                        i < fornecedores.Count ? fornecedores[i].Nome : ""
+                    };
+
+                    lista.Items.Add(new ListViewItem(item));
+                }
+            }
+        }
+
+        public static void ListarProdutoCliente(ListView lista)
+        {
+            lista.Items.Clear();
+            using (var contexto = new MiniErpContext())
+            {
+                var produtos = contexto.Produtos.ToList();
+                var clientes = contexto.Clientes.ToList();
+
+                int menorLista = Math.Min(produtos.Count, clientes.Count);
+
+                for (int i = 0; i < menorLista; i++)
+                {
+                    string[] item = { produtos[i].Id.ToString(), produtos[i].Nome, clientes[i].Id.ToString(), clientes[i].Nome };
+                    lista.Items.Add(new ListViewItem(item));
+                }
+
+                for (int i = menorLista; i < produtos.Count; i++)
+                {
+                    string[] item = { produtos[i].Id.ToString(), produtos[i].Nome };
+                    lista.Items.Add(new ListViewItem(item));
+                }
+
+                for (int i = menorLista; i < clientes.Count; i++)
+                {
+                    string[] item = { clientes[i].Id.ToString(), clientes[i].Nome };
+                    lista.Items.Add(new ListViewItem(item));
+                }
+            }
+        }
+
+        public static void ListarFornecedores(ListView lista)
+        {
+            lista.Items.Clear();
+            using (var contexto = new MiniErpContext())
+            {
+                var fornecedores = contexto.Fornecedors.ToList();
+
+                foreach(var f in fornecedores)
+                {
+                    string[] item = { f.Id.ToString(), f.Nome };
+                    lista.Items.Add(new ListViewItem(item));
+                }
+            }
+        }
+
+        public static void ListarNota(ListView lista)
+        {
+            lista.Items.Clear();
+            using (var contexto = new MiniErpContext())
+            {
+                var notas = contexto.Nota.ToList();
+                var produtos = contexto.Produtos.ToList();
+                var clientes = contexto.Clientes.ToList();
+
+                for (int i = 0; i < notas.Count; i++)
+                {
+                    string[] item = { notas[i].Id.ToString(), produtos[i].Nome, clientes[i].Nome };
+                    lista.Items.Add(new ListViewItem(item));
+                }
+            }
+        }
     }
 }

@@ -48,15 +48,18 @@ namespace _13_MiniERPcomEntity.Forms
             }
             else
             {
-                if (Operacoes.CadastrarCliente(nome, email))
+                try
                 {
-                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais clientes?", "Sucesso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    Operacoes.CadastrarCliente(nome, email);
+                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais clientes?", "Sucesso",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (resposta == DialogResult.No)
                         this.Close();
                 }
-                else
+                catch (Exception) 
                 {
-                    MessageBox.Show("Erro");
+                    MessageBox.Show("Erro durante o cadastro de cliente", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

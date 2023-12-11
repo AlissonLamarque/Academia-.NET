@@ -41,6 +41,8 @@
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             groupBox_Lista = new GroupBox();
+            button_Notas = new Button();
+            button_Listar = new Button();
             groupBox_Cadastro.SuspendLayout();
             groupBox_Lista.SuspendLayout();
             SuspendLayout();
@@ -49,7 +51,7 @@
             // 
             label_Titulo.AutoSize = true;
             label_Titulo.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label_Titulo.Location = new Point(251, 9);
+            label_Titulo.Location = new Point(315, 9);
             label_Titulo.Name = "label_Titulo";
             label_Titulo.Size = new Size(278, 37);
             label_Titulo.TabIndex = 0;
@@ -57,6 +59,7 @@
             // 
             // groupBox_Cadastro
             // 
+            groupBox_Cadastro.Controls.Add(button_Notas);
             groupBox_Cadastro.Controls.Add(groupBox2);
             groupBox_Cadastro.Controls.Add(button_Produto);
             groupBox_Cadastro.Controls.Add(button_Compra);
@@ -65,7 +68,7 @@
             groupBox_Cadastro.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox_Cadastro.Location = new Point(29, 80);
             groupBox_Cadastro.Name = "groupBox_Cadastro";
-            groupBox_Cadastro.Size = new Size(237, 268);
+            groupBox_Cadastro.Size = new Size(235, 336);
             groupBox_Cadastro.TabIndex = 1;
             groupBox_Cadastro.TabStop = false;
             groupBox_Cadastro.Text = "ÁREA DE CADASTRO";
@@ -126,10 +129,10 @@
             // 
             // button_Sair
             // 
-            button_Sair.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button_Sair.Location = new Point(326, 391);
+            button_Sair.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button_Sair.Location = new Point(370, 438);
             button_Sair.Name = "button_Sair";
-            button_Sair.Size = new Size(124, 34);
+            button_Sair.Size = new Size(142, 34);
             button_Sair.TabIndex = 0;
             button_Sair.Text = "SAIR";
             button_Sair.UseVisualStyleBackColor = true;
@@ -144,7 +147,7 @@
             listView_Lista.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             listView_Lista.Location = new Point(3, 29);
             listView_Lista.Name = "listView_Lista";
-            listView_Lista.Size = new Size(399, 236);
+            listView_Lista.Size = new Size(481, 304);
             listView_Lista.TabIndex = 5;
             listView_Lista.UseCompatibleStateImageBehavior = false;
             listView_Lista.View = View.Details;
@@ -152,34 +155,58 @@
             // columnHeader1
             // 
             columnHeader1.Text = "Produtos";
-            columnHeader1.Width = 132;
+            columnHeader1.Width = 160;
             // 
             // columnHeader2
             // 
             columnHeader2.Text = "Clientes";
-            columnHeader2.Width = 132;
+            columnHeader2.Width = 160;
             // 
             // columnHeader3
             // 
             columnHeader3.Text = "Fornecedores";
-            columnHeader3.Width = 132;
+            columnHeader3.Width = 160;
             // 
             // groupBox_Lista
             // 
+            groupBox_Lista.Controls.Add(button_Listar);
             groupBox_Lista.Controls.Add(listView_Lista);
             groupBox_Lista.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox_Lista.Location = new Point(341, 80);
             groupBox_Lista.Name = "groupBox_Lista";
-            groupBox_Lista.Size = new Size(405, 268);
+            groupBox_Lista.Size = new Size(487, 336);
             groupBox_Lista.TabIndex = 6;
             groupBox_Lista.TabStop = false;
             groupBox_Lista.Text = "LISTA";
+            // 
+            // button_Notas
+            // 
+            button_Notas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button_Notas.Location = new Point(53, 265);
+            button_Notas.Name = "button_Notas";
+            button_Notas.Size = new Size(126, 58);
+            button_Notas.TabIndex = 7;
+            button_Notas.Text = "VISUALIZAR NOTAS";
+            button_Notas.UseVisualStyleBackColor = true;
+            button_Notas.Click += button_Notas_Click;
+            // 
+            // button_Listar
+            // 
+            button_Listar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button_Listar.Location = new Point(450, 299);
+            button_Listar.Name = "button_Listar";
+            button_Listar.Size = new Size(34, 34);
+            button_Listar.TabIndex = 7;
+            button_Listar.Text = "...";
+            button_Listar.TextAlign = ContentAlignment.TopCenter;
+            button_Listar.UseVisualStyleBackColor = true;
+            button_Listar.Click += button_Listar_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(887, 484);
             Controls.Add(groupBox_Lista);
             Controls.Add(button_Sair);
             Controls.Add(groupBox_Cadastro);
@@ -207,5 +234,7 @@
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
+        private Button button_Listar;
+        private Button button_Notas;
     }
 }

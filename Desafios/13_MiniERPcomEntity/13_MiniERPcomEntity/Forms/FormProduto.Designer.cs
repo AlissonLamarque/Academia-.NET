@@ -38,6 +38,7 @@
             textBox_Valor = new TextBox();
             numericUpDown_Fornecedor = new NumericUpDown();
             button_Enviar = new Button();
+            button_Fornecedores = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown_Fornecedor).BeginInit();
             SuspendLayout();
             // 
@@ -94,6 +95,7 @@
             // textBox_Nome
             // 
             textBox_Nome.Location = new Point(81, 90);
+            textBox_Nome.MaxLength = 50;
             textBox_Nome.Name = "textBox_Nome";
             textBox_Nome.PlaceholderText = "Nome do produto";
             textBox_Nome.Size = new Size(178, 23);
@@ -103,6 +105,7 @@
             // textBox_Desc
             // 
             textBox_Desc.Location = new Point(81, 159);
+            textBox_Desc.MaxLength = 200;
             textBox_Desc.Multiline = true;
             textBox_Desc.Name = "textBox_Desc";
             textBox_Desc.PlaceholderText = "Breve descrição sobre o produto";
@@ -113,6 +116,7 @@
             // textBox_Valor
             // 
             textBox_Valor.Location = new Point(81, 274);
+            textBox_Valor.MaxLength = 18;
             textBox_Valor.Name = "textBox_Valor";
             textBox_Valor.PlaceholderText = "Valor do produto";
             textBox_Valor.Size = new Size(178, 23);
@@ -123,7 +127,7 @@
             // 
             numericUpDown_Fornecedor.Location = new Point(81, 354);
             numericUpDown_Fornecedor.Name = "numericUpDown_Fornecedor";
-            numericUpDown_Fornecedor.Size = new Size(178, 23);
+            numericUpDown_Fornecedor.Size = new Size(142, 23);
             numericUpDown_Fornecedor.TabIndex = 8;
             // 
             // button_Enviar
@@ -137,11 +141,23 @@
             button_Enviar.UseVisualStyleBackColor = true;
             button_Enviar.Click += button_Enviar_Click;
             // 
+            // button_Fornecedores
+            // 
+            button_Fornecedores.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button_Fornecedores.Location = new Point(229, 354);
+            button_Fornecedores.Name = "button_Fornecedores";
+            button_Fornecedores.Size = new Size(30, 23);
+            button_Fornecedores.TabIndex = 10;
+            button_Fornecedores.Text = "...";
+            button_Fornecedores.UseVisualStyleBackColor = true;
+            button_Fornecedores.Click += button_Fornecedores_Click;
+            // 
             // FormProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(344, 450);
+            Controls.Add(button_Fornecedores);
             Controls.Add(button_Enviar);
             Controls.Add(numericUpDown_Fornecedor);
             Controls.Add(textBox_Valor);
@@ -171,5 +187,6 @@
         private TextBox textBox_Valor;
         private NumericUpDown numericUpDown_Fornecedor;
         private Button button_Enviar;
+        private Button button_Fornecedores;
     }
 }

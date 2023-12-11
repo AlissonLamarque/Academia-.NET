@@ -42,6 +42,12 @@ namespace _13_MiniERPcomEntity.Forms
             }
         }
 
+        private void button_Fornecedores_Click(object sender, EventArgs e)
+        {
+            FormListaFornecedor form = new FormListaFornecedor();
+            form.Show();
+        }
+
         private void button_Enviar_Click(object sender, EventArgs e)
         {
             string nome = textBox_Nome.Text;
@@ -69,16 +75,20 @@ namespace _13_MiniERPcomEntity.Forms
             }
             else
             {
-                
-                valor = decimal.Parse(valortmp);
-                if (Operacoes.CadastrarProduto(nome, desc, valor, fornecedor))
+                try
                 {
-                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais produtos?", "Sucesso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    valor = decimal.Parse(valortmp);
+                    Operacoes.CadastrarProduto(nome, desc, valor, fornecedor);
+                    DialogResult resposta = MessageBox.Show("Deseja cadastrar mais produtos?", "Sucesso",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (resposta == DialogResult.No)
                         this.Close();
                 }
-                else
-                    MessageBox.Show("Erro");
+                catch (Exception)
+                {
+                    MessageBox.Show("Erro no cadastro de produto", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
