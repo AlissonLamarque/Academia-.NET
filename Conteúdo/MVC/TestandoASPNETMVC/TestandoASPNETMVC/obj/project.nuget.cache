@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y/5ut37bpl+sMiSlyHQs5iH1Z8KVOc48WpaPs8hL9OUxxrmCsXL0/PIdHbBC4jXsML5mnla4+mBPVdJt2d/wcg==",
+  "dgSpecHash": "dXyt+dyZFWKjxVtLB0anWKecJNSbgxoG+CgD7sZR1+Ywnl7R0/e0w4whDJrNcn3ww7Yi4lH/lT64Hz16CzIiQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\MVC\\TestandoASPNETMVC\\TestandoASPNETMVC\\TestandoASPNETMVC.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\aliss\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

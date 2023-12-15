@@ -176,3 +176,4 @@ C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\API\
 C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\API\AulaAPI\AulaAPI\obj\Debug\net6.0\AulaAPI.pdb
 C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\API\AulaAPI\AulaAPI\obj\Debug\net6.0\AulaAPI.genruntimeconfig.cache
 C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\API\AulaAPI\AulaAPI\obj\Debug\net6.0\ref\AulaAPI.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\Academia .NET Atos\Conteúdo\API\AulaAPI\AulaAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

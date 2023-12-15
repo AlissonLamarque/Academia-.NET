@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "JRVUAzBAZBE06ykbuWnZj7rN2iM3g1t4ovjsrazycqzH7lvHvQJbHxw4XRuRSsU6Qb2w5Sisx4KEqKXGG0wt2g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\Academia .NET Atos\\Conteúdo\\XAMARIN\\MobileAppXamarin\\MobileAppXamarin\\MobileAppXamarin.iOS\\MobileAppXamarin.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aliss\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\aliss\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\aliss\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
